@@ -24,6 +24,8 @@ p {
   font-family: "Baskerville";
   font-size: 110%;
   margin-bottom: 0;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 body {
@@ -71,6 +73,8 @@ canvas {
   line-height: 150%;
   font-size: 100%;
   margin-top: 20px;
+  margin-top: 34px;
+  margin-bottom: 34px;
 }
 
 #style-bar {
