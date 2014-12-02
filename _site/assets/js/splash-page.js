@@ -13,15 +13,15 @@ function Constellation (canvas) {
 			color: 'rgba(255, 255, 255, .5)'
 		},
 		line: {
-			color: 'rgba(0, 0, 0, .2)',
+			color: 'rgba(0, 0, 0, 0)',
 			width: 0.2
 		},
 		position: {
 			x: canvas.width * 0.5,
 			y: canvas.height * 0.5
 		},
-		velocity: 0.1,
-		length: 100,
+		velocity: 0.01,
+		length: 500,
 		distance: 120,
 		radius: 150,
 		stars: []
@@ -31,8 +31,8 @@ function Constellation (canvas) {
 		this.x = Math.random() * canvas.width;
 		this.y = Math.random() * canvas.height;
 
-		this.vx = (_this.config.velocity - (Math.random() * 0.5));
-		this.vy = (_this.config.velocity - (Math.random() * 0.5));
+		this.vx = (_this.config.velocity - (Math.random() * 0.1));
+		this.vy = (_this.config.velocity - (Math.random() * 0.1));
 
 		this.radius = Math.random();
 	}

@@ -13,7 +13,7 @@ function Constellation (canvas) {
 			color: 'rgba(255, 255, 255, .5)'
 		},
 		line: {
-			color: 'rgba(0, 0, 0, .2)',
+			color: 'rgba(0, 0, 0, 0)',
 			width: 0.2
 		},
 		position: {
