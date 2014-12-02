@@ -20,8 +20,8 @@ function Constellation (canvas) {
 			x: canvas.width * 0.5,
 			y: canvas.height * 0.5
 		},
-		velocity: 0.1,
-		length: 100,
+		velocity: 0.01,
+		length: 500,
 		distance: 120,
 		radius: 150,
 		stars: []
@@ -31,8 +31,8 @@ function Constellation (canvas) {
 		this.x = Math.random() * canvas.width;
 		this.y = Math.random() * canvas.height;
 
-		this.vx = (_this.config.velocity - (Math.random() * 0.5));
-		this.vy = (_this.config.velocity - (Math.random() * 0.5));
+		this.vx = (_this.config.velocity - (Math.random() * 0.1));
+		this.vy = (_this.config.velocity - (Math.random() * 0.1));
 
 		this.radius = Math.random();
 	}
@@ -61,41 +61,6 @@ function Constellation (canvas) {
 				star.x += star.vx;
 				star.y += star.vy;
 			}
-		},
-
-		line: function(){
-			var length = _this.config.length,
-				iStar,
-				jStar,
-				i,
-				j;
-
-			for(i = 0; i < length; i++){
-				for(j = 0; j < length; j++){
-					iStar = _this.config.stars[i];
-					jStar = _this.config.stars[j];
-
-					if(
-						(iStar.x - jStar.x) < _this.config.distance &&
-						(iStar.y - jStar.y) < _this.config.distance &&
-						(iStar.x - jStar.x) > - _this.config.distance &&
-						(iStar.y - jStar.y) > - _this.config.distance
-					) {
-						if(
-							(iStar.x - _this.config.position.x) < _this.config.radius &&
-							(iStar.y - _this.config.position.y) < _this.config.radius &&
-							(iStar.x - _this.config.position.x) > - _this.config.radius &&
-							(iStar.y - _this.config.position.y) > - _this.config.radius
-						) {
-							ctx.beginPath();
-							ctx.moveTo(iStar.x, iStar.y);
-							ctx.lineTo(jStar.x, jStar.y);
-							ctx.stroke();
-							ctx.closePath();
-						}
-					}
-				}
-			}
 		}
 	};
 
@@ -112,7 +77,6 @@ function Constellation (canvas) {
 			star.create();
 		}
 
-		star.line();
 		star.animate();
 	};
 
