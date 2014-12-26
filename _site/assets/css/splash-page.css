@@ -10,9 +10,11 @@
 }
 
 h1 {
-  font-family: "Libre Baskerville", bold;
+  font-family: "Baskerville";
+  font-size:45px;
   margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top:20px;
+  letter-spacing:2px;
 }
 
 h3, h4, h5{
@@ -23,7 +25,10 @@ h3, h4, h5{
 p {
   font-family: "Baskerville";
   font-size: 110%;
+  letter-spacing:.5px;
   margin-bottom: 0;
+  max-width:450px;
+  margin:0 auto;
 }
 
 body {
@@ -53,17 +58,23 @@ canvas {
 
 #subheader {
   font-family:"bebas_neueregular";
-  line-height: 130%;
-  font-size: 175%;
-  letter-spacing: .75px;
+  line-height:130%;
+  font-size:210%;
+  letter-spacing:1.5px;
   margin-top: 20px;
 }
 
 #year {
   font-family: "Baskerville";
-  line-height: 150%;
-  font-size: 240%;
-  letter-spacing: .10em;
+  line-height:1;
+  font-size: 260%;
+  letter-spacing:1px;
+}
+
+#aigaheader {
+  font-family:"Baskerville";
+  font-size:20px;
+  letter-spacing:1px;
 }
 
 #tree {
@@ -71,23 +82,25 @@ canvas {
 }
 
 #joinus {
-  font-family: "Baskerville";
-  letter-spacing: 1px;
+  font-family:"Baskerville";
+  font-weight: bold;
+  letter-spacing:1px;
   margin-top:20px;
-  line-height: 150%;
-  font-size:21px;
-  margin-top: 20px;
+  line-height:150%;
+  font-size:100%;
+  margin-top:20px;
+  margin-bottom:34px;
 }
 
 #style-bar {
   margin-left: auto;
   margin-right: auto;
-  width: 20%;
-  height: 1px;
-  border: 0;
-  background-color: #c1bb91;
-  color: #c1bb91;
-  text-align: center;
+  width:30%;
+  height:1px;
+  border:0;
+  background-color:#c1bb91;
+  color:#c1bb91;
+  text-align:center;
 }
 #style-bar:after {
   content: "|";
@@ -103,13 +116,14 @@ canvas {
 }
 
 #email-address {
-  height: 31px;
+  height:35px;
   color: #c1bb91;
   max-width:450px;
   width: 55%;
   box-shadow: none!important;
   border: 1px solid #c1bb91;
-  background:#121b27;
+  text-decoration: none;
+  background: transparent;
   background-color: #121b27;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -120,8 +134,8 @@ canvas {
 #submit-button {
   color: #c1bb91;
   font-family:"bebas_neueregular";
-  font-size: 145%;
-  height: 41px;
+  font-size: 155%;
+  height: 45px;
   letter-spacing: 1px;
   text-shadow: none!important;
   margin: -5px;
@@ -129,10 +143,14 @@ canvas {
   border: 1px solid #c1bb91;
   text-decoration: none;
   background: transparent;
-  background-color: #121b27;
+  background-color: #212425;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+}
+
+#submit-button:hover{
+  background-color: #1b1c1c;
 }
 
 .form-control::-moz-placeholder {
