@@ -177,11 +177,13 @@ canvas {
 }
 .desktop-logo {
   display: inline-block;
+  width: 51%;
 }
 
 @media all and (max-width: 600px) {
   .mobile-logo {
     display: inline-block;
+    width: 80%;
   }
   .desktop-logo {
     display: none;
