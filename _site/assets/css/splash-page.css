@@ -48,7 +48,7 @@ body {
   right: 10%;
 }
 canvas {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -161,4 +161,8 @@ canvas {
 }
 .form-control::-webkit-input-placeholder {
   color: #c1bb91;
+}
+
+#mailing-list-signup {
+  padding-bottom: 75px;
 }
