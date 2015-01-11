@@ -171,3 +171,19 @@ canvas {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
+.mobile-logo {
+  display: none;
+}
+.desktop-logo {
+  display: inline-block;
+}
+
+@media all and (max-width: 600px) {
+  .mobile-logo {
+    display: inline-block;
+  }
+  .desktop-logo {
+    display: none;
+  }
+}
