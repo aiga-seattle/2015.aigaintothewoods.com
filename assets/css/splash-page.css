@@ -179,6 +179,7 @@ canvas {
 .desktop-logo {
   display: inline-block;
   width: 55%;
+  max-width: 55%;
 }
 
 @media all and (max-width: 600px) {
