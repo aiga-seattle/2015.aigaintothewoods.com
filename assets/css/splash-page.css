@@ -191,3 +191,7 @@ canvas {
     display: none;
   }
 }
+
+.copy {
+  text-align: justify;
+}
