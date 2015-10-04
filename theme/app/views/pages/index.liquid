@@ -26,59 +26,66 @@ published: true
   </head>
   <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">AIGA</a>
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+              {{ '/images/aiga_logo.svg' | theme_image_tag: 'alt:AIGA Logo' }}
+            </a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Logistics</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Overview</a></li>
-            <li><a href="#">Speakers</a></li>
-            <li><a href="#">Workshops</a></li>
-            <li><a href="#">Schedule</a></li>
-            <li><a href="#">Logistics</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">Register</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <div class="jumbotron">
-      <div class="container">
-        <div class="hero-image col-md-10">
-
+    <section class="jumbotron">
+      <div class="container-fluid">
+        <div class="col-md-1"></div>
+        <div class="hero-image col-md-8">
+          {{ '/images/itw2016-hero.svg' | theme_image_tag: 'alt:Into The Woods 2016' }}
         </div>
+        <div class="col-md-1"></div>
         <div class="hero-copy col-md-2">
-          <p>/</p>
-          <p>APRIL 8-10 2016</p>
-          <p>SLEEPING LADY LODGE</p>
-          <p>LEAVEN- WORTH WASHING- TON</p>
-          <p>/</p>
+          <div class="hero-slash">
+            {{ '/images/slash.svg' | theme_image_tag }}
+          </div>
+          <p>April<br/>8-10<br/>2016</p>
+          <p>Sleeping<br/>Lady<br/>Resort</p>
+          <p>Leaven &#45;<br/>worth<br/>Washing &#45;<br/>ton</p>
+          <div class="hero-slash">
+            {{ '/images/slash.svg' | theme_image_tag }}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="container">
-      <div class="col-md-12">
-        <h1>BETWEEN THE LINES</h1>
+    <section class="overview">
+      <div class="container-fluid">
+        <div class="col-md-12">
+          <h1>Between the Lines</h1>
 
-        <p>Designing between the lines means looking past what’s in front of you and finding power in the unexpected. Into the Woods 2016 celebrates provocative ideas, integrative thinking, and boundary-defying design.</p>
+          <p>Designing between the lines means looking past what’s in front of you and finding power in the unexpected. Into the Woods 2016 celebrates provocative ideas, integrative thinking, and boundary-defying design.</p>
 
-        <p>That's right, AIGA Seattle’s legendary Into the Woods conference is back, with three days of hands-on workshops, outstanding speakers, and backwoods creative bonding.</p>
+          <p>That's right, AIGA Seattle’s legendary Into the Woods conference is back, with three days of hands-on workshops, outstanding speakers, and backwoods creative bonding.</p>
 
+        </div>
       </div>
-    </div>
+    </section>
 
     <section id="sponsors">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
             <h2>Sponsors</h2>
@@ -88,7 +95,7 @@ published: true
     </section>
 
     <footer>
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
             <a href="#">Into The Woods</a>
@@ -103,6 +110,8 @@ published: true
 
     <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     {{ 'bootstrap.min.js' | javascript_tag }}
+    <script src="https://use.typekit.net/sgf1ybn.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script type='text/javascript'>
       $(document).ready(function() {
       });
