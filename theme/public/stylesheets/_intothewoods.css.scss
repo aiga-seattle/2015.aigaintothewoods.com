@@ -16,10 +16,10 @@ body {
 
 .navbar-brand {
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   padding: 0;
-  margin: 25px !important;
+  margin: 20px !important;
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -35,6 +35,7 @@ body {
   background: $itw-primary-color;
   padding-top: 90px;
   padding-bottom: 0px;
+  margin-bottom: 0px;
 
   .hero-image img {
     max-height: 963px;
@@ -61,9 +62,55 @@ h1, h2, h3, h4 {
 }
 
 .overview {
-  display: none;
+  display: block;
   background-image: url(/images/itw2016_landscape-background.png);
   text-align: center;
+
+  .overview-container {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .overview-copy {
+    color: #fff;
+    margin: 3em auto 3em;
+
+    h1 {
+      margin-bottom: 1em;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  }
 }
 
-#sponsors, footer { display: none }
+#sponsors { display: none }
+
+footer {
+  text-align: center;
+
+  .footer-logo img{
+
+  }
+
+  .footer-copy {
+    margin: 5em auto;
+    color: #000;
+  }
+
+  nav {
+    margin-top: 1em;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    li:first-child {
+      border-right: 2px solid #000;
+    }
+
+    li {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
