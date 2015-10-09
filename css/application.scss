@@ -1,0 +1,13 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// Settings examples:
+// $navbar-default-bg: #312312;
+// $light-orange: #ff8c00;
+// $navbar-default-color: $light-orange;
+
+$icon-font-path: "/fonts/";
+
+@import "bootstrap";
+@import "intothewoods";
