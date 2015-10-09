@@ -1,25 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Into The Woods 2016 | AIGA Seattle</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style type="text/css">
-    .hidden {
-      visibility: hidden;
-    }
+---
+layout: default
+---
 
-    body {
-      background-image: url('./img/IntoTheWoodsSplashTemp.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-  }
-  </style>
-</head>
-<body>
-  <p class='hidden'>
-    AIGA Seattle Brings You INTO THE WOODS April 8 - 10, 2016 At The Sleeping Lady In Leavenworth, WA.
-  </p>
-</body>
-</html>
+<div class="container-fluid splash-page">
+  <div class="row">
+    <div class="hero-image col-md-10">
+      <img id="aiga-logo" src="{{ "/images/aiga-logo-black.svg" | prepend: site.baseurl }}" alt="AIGA Logo"/>
+
+      <div id="event-details" class="hero-copy">
+        <div class="hero-slash">
+          <img src="{{ "/images/slash.svg" | prepend: site.baseurl }}" />
+        </div>
+        <p>April<br/>8-10<br/>2016</p>
+        <p>Sleeping<br/>Lady<br/>Resort</p>
+        <p>Leaven &#45;<br/>worth<br/>Washing &#45;<br/>ton</p>
+        <div class="hero-slash">
+          <img src="{{ "/images/slash.svg" | prepend: site.baseurl }}" />
+        </div>
+      </div>
+
+      <img id="event-hero" src="{{ "/images/itw2016-hero.svg" | prepend: site.baseurl }}" alt="Into The Woods 2016" />
+
+    </div>
+
+    <div class="col-md-2 overview-copy">
+      <h1>BETWEEN<br/>THE LINES</h1>
+
+      <p>Designing between the lines means looking past what’s in front of you and finding power in the unexpected. Into the Woods 2016 celebrates provocative ideas, integrative thinking, and boundary-defying design.</p>
+
+      <p>That's right, AIGA Seattle’s legendary Into the Woods conference is back, with three days of hands-on workshops, outstanding speakers, and backwoods creative bonding.</p>
+
+      <p class="program-announcement-copy">Speaker And Workshop Announcements Coming Soon.</p>
+      <p class="register-copy">Register While There’s Still Space!</p>
+
+      <a class="btn btn-default btn-register" href="https://www.eventbrite.com/e/into-the-woods-conference-2016-tickets-18926152632" role="button">Sign Up</a>
+    </div>
+  </div>
+</div>
+
+<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type='text/javascript' src="{{ "/javascripts/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+
+<script type='text/javascript'>
+  $(document).ready(function() {
+  });
+</script>
