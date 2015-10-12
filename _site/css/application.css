@@ -5795,86 +5795,30 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+html, body {
+  height: 100%; }
+
 body {
-  background: #f3f2e7;
-  font-family: 'Brown Gothic W01 Bold'; }
+  background-color: #f3f2e7;
+  font-family: 'Brown Gothic W01 Bold', Helvetica, Arial, sans-serif; }
 
-.navbar {
-  font-size: 18px;
-  text-transform: uppercase; }
+.full-height {
+  height: 100%; }
 
-.navbar-brand a {
-  min-width: 43px;
-  min-height: 43px; }
+.background-moon-illustration {
+  height: 100%;
+  width: 100%;
+  background: url(/images/moon-illustration.png) no-repeat 40px center fixed;
+  background-size: auto 100%;
+  position: fixed; }
 
-.navbar-brand {
-  display: block;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  margin: 20px !important; }
-
-.navbar-inverse .navbar-nav > li > a {
-  color: #fff; }
-
-.navbar-nav > li {
-  padding-top: 20px;
-  padding-bottom: 20px; }
-
-.splash-page {
-  background: #f3f2e7;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-bottom: 0px; }
-  .splash-page .hero-image img {
-    max-height: 963px; }
-  .splash-page .hero-copy {
-    text-transform: uppercase;
-    font-family: 'Brown Gothic W01 Bold';
-    position: absolute;
-    right: 0;
-    background-color: #f3f2e7;
-    padding: 25px;
-    font-size: 20px;
-    top: 0;
-    padding-top: 4%; }
-    .splash-page .hero-copy p {
-      font-weight: bold; }
-    .splash-page .hero-copy .hero-slash img {
-      width: 25px;
-      margin-bottom: 10%; }
-
-#aiga-logo {
-  position: absolute;
-  top: 50px;
-  left: 50px; }
-
-h1, h2, h3, h4 {
-  text-transform: uppercase; }
-
-.overview-copy h1 {
-  margin-bottom: 1em; }
-.overview-copy p {
-  font-size: 18px;
-  margin-bottom: 24px; }
-
-#sponsors {
-  display: none; }
-
-footer {
-  text-align: center; }
-  footer .footer-copy {
-    margin: 5em auto;
-    color: #000; }
-  footer nav {
-    margin-top: 1em;
-    font-size: 18px;
-    text-transform: uppercase; }
-    footer nav li:first-child {
-      border-right: 2px solid #000; }
-    footer nav li {
-      padding-left: 20px;
-      padding-right: 20px; }
+.overview-copy {
+  width: 55%;
+  margin-top: 19%;
+  margin-bottom: 100px; }
+  .overview-copy p {
+    font-size: 1.2em;
+    margin: 1.3em 0; }
 
 .program-announcement-copy, .register-copy {
   text-transform: uppercase; }
@@ -5889,3 +5833,8 @@ footer {
 .btn-register:hover {
   border-color: #1cca8c;
   background-color: #1cca8c; }
+
+#aiga-logo {
+  position: fixed;
+  top: 2%;
+  left: 2%; }
