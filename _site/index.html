@@ -20,6 +20,8 @@
     <div class="col-md-12 full-height container-moon-illustration">
       <img id="aiga-logo" src="/images/aiga-logo-black.svg" alt="AIGA Logo"/>
       <img id="moon-illustration" src="/images/moon-illustration.png" />
+      <img id="moon-illustration-md" src="/images/moon-illustration-600.png" />
+      <img id="moon-illustration-sm" src="/images/moon-illustration-250.png" />
 
       <div id="container-overview-copy" class="container-overview-copy">
         <div id="event-details" class="event-details">
@@ -52,9 +54,11 @@
   $(document).ready(function() {
     var adjustDivPos = function(){
       var overviewCopy = $('#container-overview-copy'),
-          aigaLogo = $('#aiga-logo');
+          moonIllustration = $('#moon-illustration'),
+          aigaLogo = $('#aiga-logo')
+          remainingWidth = $(window).width() - moonIllustration.width();
 
-      if ( overviewCopy.offset().top > 0){
+      if (remainingWidth < 300) {
         overviewCopy.addClass("wide-display");
         aigaLogo.addClass("unlock-fixed");
       } else {
