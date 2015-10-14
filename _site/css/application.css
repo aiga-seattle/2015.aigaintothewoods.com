@@ -5869,7 +5869,10 @@ body {
 .overview-copy {
   float: left;
   max-width: 280px; }
+  .overview-copy h1 {
+    letter-spacing: 4px; }
   .overview-copy p {
+    letter-spacing: 1px;
     font-size: 1.2em;
     margin: 1.3em 0; }
 
@@ -5900,6 +5903,21 @@ body {
   top: 2%;
   left: 2%; }
 
+.wide-display {
+  margin-bottom: 100px;
+  width: 100%;
+  margin: 0 auto 100px;
+  text-align: center;
+  max-width: initial; }
+  .wide-display .overview-copy {
+    margin: 0 auto;
+    float: none;
+    max-width: none;
+    width: 75%; }
+
+.unlock-fixed {
+  position: absolute !important; }
+
 @media (max-width: 1186px) {
   #aiga-logo {
     position: absolute; }
@@ -5922,9 +5940,10 @@ body {
 
   .overview-copy {
     margin-bottom: 100px;
-    width: 500px;
+    width: 100%;
     margin: 0 auto 100px;
-    text-align: center; }
+    text-align: center;
+    max-width: initial; }
 
   .container-overview-copy {
     width: 100%;

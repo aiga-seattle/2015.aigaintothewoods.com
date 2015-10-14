@@ -15,14 +15,14 @@
 </head>
 
   <body>
-    <div class="container-fluid splash-page full-height">
+    <div id="container" class="container-fluid splash-page full-height">
   <div class="row full-height">
     <div class="col-md-12 full-height container-moon-illustration">
       <img id="aiga-logo" src="/images/aiga-logo-black.svg" alt="AIGA Logo"/>
       <img id="moon-illustration" src="/images/moon-illustration.png" />
 
-      <div class="container-overview-copy">
-        <div class="event-details">
+      <div id="container-overview-copy" class="container-overview-copy">
+        <div id="event-details" class="event-details">
           <p>April 8-10, 2016 | Sleeping Lady Lodge | Leavenworth, WA</p>
         </div>
 
@@ -33,7 +33,7 @@
 
           <p>That's right, AIGA Seattle’s legendary Into the Woods conference is back, with three days of hands-on workshops, outstanding speakers, and backwoods creative bonding.</p>
 
-          <p class="program-announcement-copy">Speaker And Workshop Announcements Coming Soon.</p>
+          <p class="program-announcement-copy">Speaker And Work-<br/>shop Announcements Coming Soon.</p>
           <p class="register-copy">Register While There’s Still Space!</p>
 
           <a class="btn btn-default btn-register" href="https://www.eventbrite.com/e/into-the-woods-conference-2016-tickets-18926152632" role="button">Sign Up</a>
@@ -50,6 +50,22 @@
 
 <script type='text/javascript'>
   $(document).ready(function() {
+    var adjustDivPos = function(){
+      var overviewCopy = $('#container-overview-copy'),
+          aigaLogo = $('#aiga-logo');
+
+      if ( overviewCopy.offset().top > 0){
+        overviewCopy.addClass("wide-display");
+        aigaLogo.addClass("unlock-fixed");
+      } else {
+        overviewCopy.removeClass("wide-display");
+        aigaLogo.removeClass("unlock-fixed");
+      }
+    }
+
+    $(window).resize(adjustDivPos);
+
+    adjustDivPos();
   });
 </script>
   </body>
