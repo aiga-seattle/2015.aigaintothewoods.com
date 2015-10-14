@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url("//hello.myfonts.net/count/2f6c56");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5795,12 +5796,58 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+/**
+ * @license
+ * MyFonts Webfont Build ID 3107926, 2015-10-14T10:41:21-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: CenturyGothicStd-Italic by Monotype
+ * URL: http://www.myfonts.com//fonts/mti/centurygothic/std-italic/
+ *
+ * Webfont: CenturyGothicStd-BoldItalic by Monotype
+ * URL: http://www.myfonts.com//fonts/mti/centurygothic/std-bold-italic/
+ *
+ * Webfont: CenturyGothicStd-Bold by Monotype
+ * URL: http://www.myfonts.com//fonts/mti/centurygothic/std-bold/
+ *
+ * Webfont: CenturyGothicStd by Monotype
+ * URL: http://www.myfonts.com//fonts/mti/centurygothic/std-regular/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3107926
+ * Licensed pageviews: 250,000
+ * Webfonts copyright: Copyright The Monotype Corporation. All rights reserved.
+ *
+ * © 2015 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: 'CenturyGothicStd-Italic';
+  src: url("/fonts/centurygothic/2F6C56_0_0.eot");
+  src: url("/fonts/centurygothic/2F6C56_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/centurygothic/2F6C56_0_0.woff2") format("woff2"), url("/fonts/centurygothic/2F6C56_0_0.woff") format("woff"), url("/fonts/centurygothic/2F6C56_0_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'CenturyGothicStd-BoldItalic';
+  src: url("/fonts/centurygothic/2F6C56_1_0.eot");
+  src: url("/fonts/centurygothic/2F6C56_1_0.eot?#iefix") format("embedded-opentype"), url("/fonts/centurygothic/2F6C56_1_0.woff2") format("woff2"), url("/fonts/centurygothic/2F6C56_1_0.woff") format("woff"), url("/fonts/centurygothic/2F6C56_1_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'CenturyGothicStd-Bold';
+  src: url("/fonts/centurygothic/2F6C56_2_0.eot");
+  src: url("/fonts/centurygothic/2F6C56_2_0.eot?#iefix") format("embedded-opentype"), url("/fonts/centurygothic/2F6C56_2_0.woff2") format("woff2"), url("/fonts/centurygothic/2F6C56_2_0.woff") format("woff"), url("/fonts/centurygothic/2F6C56_2_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'CenturyGothicStd';
+  src: url("/fonts/centurygothic/2F6C56_3_0.eot");
+  src: url("/fonts/centurygothic/2F6C56_3_0.eot?#iefix") format("embedded-opentype"), url("/fonts/centurygothic/2F6C56_3_0.woff2") format("woff2"), url("/fonts/centurygothic/2F6C56_3_0.woff") format("woff"), url("/fonts/centurygothic/2F6C56_3_0.ttf") format("truetype"); }
 html, body {
   height: 100%; }
 
 body {
   background-color: #f3f2e7;
-  font-family: 'Brown Gothic W01 Bold', Helvetica, Arial, sans-serif; }
+  font-family: 'CenturyGothicStd-Bold', Helvetica, Arial, sans-serif; }
 
 .full-height {
   height: 100%; }
