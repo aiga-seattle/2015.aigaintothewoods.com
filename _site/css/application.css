@@ -5949,11 +5949,17 @@ body {
     width: 100%;
     max-width: inherit; } }
 @media (min-width: 910px) and (max-width: 1186px) {
+  #moon-illustration {
+    display: none; }
+
   #moon-illustration-md {
     display: block;
     width: 75%;
     margin: auto; } }
 @media (max-width: 910px) {
+  #moon-illustration {
+    display: none; }
+
   #moon-illustration-sm {
     display: block;
     margin: auto; }
