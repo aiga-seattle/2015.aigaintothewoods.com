@@ -5808,12 +5808,10 @@ body {
 .container-moon-illustration {
   min-width: 908px; }
 
-.background-moon-illustration {
+#moon-illustration {
+  float: left;
   height: 100%;
-  width: 100%;
-  background: url(/images/moon-illustration.png) no-repeat 40px center fixed;
-  background-size: auto 100%;
-  position: fixed; }
+  margin-right: 2%; }
 
 #moon-illustration-md, #moon-illustration-sm {
   display: none; }
@@ -5822,8 +5820,8 @@ body {
   display: none; }
 
 .overview-copy {
-  margin-top: 19%;
-  margin-bottom: 100px; }
+  float: left;
+  max-width: 280px; }
   .overview-copy p {
     font-size: 1.2em;
     margin: 1.3em 0; }
