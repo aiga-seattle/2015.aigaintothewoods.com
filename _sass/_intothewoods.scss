@@ -28,7 +28,7 @@ body {
 
 .overview-copy {
   float: left;
-  width: 280px;
+  width: 240px;
 
   h1 {
     letter-spacing: 4px;
@@ -48,7 +48,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     float: left;
-    max-width: 280px;
+    max-width: 240px;
 }
 
 .program-announcement-copy, .register-copy {
@@ -95,40 +95,23 @@ body {
     position: absolute;
   }
 
+  #moon-illustration {
+    display: block;
+    width: 100%;
+  }
+
   .container-moon-illustration {
     width: 100%;
     min-width: inherit;
-  }
-
-  #moon-illustration-no-details {
-    display: block;
-    width: 100%;
-  }
-
-  #event-details {
-    display: block;
-    margin: auto;
-
-    img {
-      margin: 2em 0;
-    }
-
-    .event-details-container {
-      width: 280px;
-      display: block;
-      margin: auto;
-      text-align: left;
-    }
-  }
-
-  #moon-illustration {
-    display: none;
   }
 
   .full-height {
     height: initial;
   }
 }
+
+
+
 
 @media (max-width: 910px) {
   #moon-illustration {
@@ -141,14 +124,26 @@ body {
     width: 100%;
   }
 
+  #event-details {
+    display: block;
+    margin: auto;
+
+    img {
+      margin: 2em 0;
+    }
+
+    .event-details-container {
+      width: 240px;
+      display: block;
+      margin: auto;
+      text-align: left;
+    }
+  }
+
   #aiga-logo {
     width: 10px;
     top:   3%;
     left:  3%;
     min-width: 50px;
-  }
-
-  .overview-copy {
-    width: 100%;
   }
 }
