@@ -31,17 +31,17 @@ body {
 }
 
 .overview-copy {
-  // width: 55%;
   float: left;
   max-width: 280px;
 
   h1 {
     letter-spacing: 4px;
+    font-size: 2em;
   }
 
   p {
     letter-spacing: 1px;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 1.3em 0;
   }
 }
