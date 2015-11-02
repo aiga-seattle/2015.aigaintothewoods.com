@@ -5842,113 +5842,79 @@ button.close {
   font-family: 'CenturyGothicStd';
   src: url("/fonts/centurygothic/2F6C56_3_0.eot");
   src: url("/fonts/centurygothic/2F6C56_3_0.eot?#iefix") format("embedded-opentype"), url("/fonts/centurygothic/2F6C56_3_0.woff2") format("woff2"), url("/fonts/centurygothic/2F6C56_3_0.woff") format("woff"), url("/fonts/centurygothic/2F6C56_3_0.ttf") format("truetype"); }
-html, body {
-  height: 100%; }
-
 body {
   background-color: #f3f2e7;
   font-family: 'CenturyGothicStd-Bold', Helvetica, Arial, sans-serif; }
 
-.full-height {
-  height: 100%; }
-
-.container-moon-illustration {
-  min-width: 908px; }
-
-#moon-illustration {
-  float: left;
-  height: 100%;
-  margin-right: 2%; }
-
-#moon-illustration-no-details, #event-details {
-  display: none; }
-
-.overview-copy {
-  float: left;
-  width: 240px; }
-  .overview-copy h1 {
-    letter-spacing: 4px;
-    font-size: 2em; }
-  .overview-copy p {
-    letter-spacing: 1px;
-    font-size: 1em;
-    margin: 1.3em 0; }
-
-.container-overview-copy {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  float: left;
-  max-width: 240px; }
-
-.program-announcement-copy, .register-copy {
+.navbar {
+  font-size: 18px;
   text-transform: uppercase; }
 
-.btn-register, .btn-register:hover {
-  font-size: 18px;
-  border-radius: 0;
-  border-color: #63E9B9;
-  text-transform: uppercase;
-  background-color: #63E9B9; }
+.navbar-brand a {
+  min-width: 43px;
+  min-height: 43px; }
 
-.btn-register:hover {
-  border-color: #1cca8c;
-  background-color: #1cca8c; }
+.navbar-brand {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 20px !important; }
 
-#aiga-logo {
-  position: fixed;
-  top: 25px;
-  left: 25px; }
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff; }
 
-.wide-display {
-  margin-bottom: 100px;
-  width: 100%;
-  margin: 0 auto 100px;
-  max-width: initial; }
-  .wide-display .overview-copy {
-    margin: 0 auto;
-    float: none; }
+.navbar-nav > li {
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
-.unlock-fixed {
-  position: absolute !important; }
+.jumbotron {
+  background: #f3f2e7;
+  padding-top: 90px;
+  padding-bottom: 0px;
+  margin-bottom: 0px; }
+  .jumbotron .hero-image img {
+    max-height: 963px; }
+  .jumbotron .hero-copy {
+    text-transform: uppercase;
+    margin-top: 7%; }
+    .jumbotron .hero-copy p {
+      font-weight: bold; }
+    .jumbotron .hero-copy .hero-slash img {
+      width: 25px;
+      margin-bottom: 10%; }
 
-@media (max-width: 1186px) {
-  #aiga-logo {
-    position: absolute; }
+h1, h2, h3, h4 {
+  text-transform: uppercase; }
 
-  #moon-illustration {
-    display: block;
-    width: 100%; }
+.overview {
+  display: block;
+  background-image: url(/images/itw2016_landscape-background.png);
+  text-align: center; }
+  .overview .overview-container {
+    background-color: rgba(0, 0, 0, 0.8); }
+  .overview .overview-copy {
+    color: #fff;
+    margin: 3em auto 3em; }
+    .overview .overview-copy h1 {
+      margin-bottom: 1em; }
+    .overview .overview-copy p {
+      font-size: 1.2em; }
 
-  .container-moon-illustration {
-    width: 100%;
-    min-width: inherit; }
+#sponsors {
+  display: none; }
 
-  .full-height {
-    height: initial; } }
-@media (max-width: 910px) {
-  #moon-illustration {
-    display: none; }
-
-  #moon-illustration-no-details {
-    display: block;
-    margin: auto;
-    width: 100%; }
-
-  #event-details {
-    display: block;
-    margin: auto; }
-    #event-details img {
-      margin: 2em 0; }
-    #event-details .event-details-container {
-      width: 240px;
-      display: block;
-      margin: auto;
-      text-align: left; }
-
-  #aiga-logo {
-    width: 10px;
-    top: 3%;
-    left: 3%;
-    min-width: 50px; } }
+footer {
+  text-align: center; }
+  footer .footer-copy {
+    margin: 5em auto;
+    color: #000; }
+  footer nav {
+    margin-top: 1em;
+    font-size: 18px;
+    text-transform: uppercase; }
+    footer nav li:first-child {
+      border-right: 2px solid #000; }
+    footer nav li {
+      padding-left: 20px;
+      padding-right: 20px; }

@@ -1,149 +1,117 @@
 $itw-primary-color: #f3f2e7; // Cream Color
 
-html, body {
-  height: 100%;
-}
-
 body {
   background-color: $itw-primary-color;
   font-family: 'CenturyGothicStd-Bold', Helvetica, Arial, sans-serif;
 }
 
-.full-height {
-  height: 100%
-}
-
-.container-moon-illustration {
-  min-width: 908px;
-}
-#moon-illustration {
-  float: left;
-  height: 100%;
-  margin-right: 2%;
-}
-
-#moon-illustration-no-details, #event-details {
-  display: none;
-}
-
-.overview-copy {
-  float: left;
-  width: 240px;
-
-  h1 {
-    letter-spacing: 4px;
-    font-size: 2em;
-  }
-
-  p {
-    letter-spacing: 1px;
-    font-size: 1em;
-    margin: 1.3em 0;
-  }
-}
-
-.container-overview-copy {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    float: left;
-    max-width: 240px;
-}
-
-.program-announcement-copy, .register-copy {
-  text-transform: uppercase;
-}
-
-.btn-register, .btn-register:hover {
+.navbar {
   font-size: 18px;
-  border-radius: 0;
-  border-color: #63E9B9;
   text-transform: uppercase;
-  background-color: #63E9B9;
 }
 
-.btn-register:hover {
-  border-color:     darken(#63E9B9, 20%);
-  background-color: darken(#63E9B9, 20%);
+.navbar-brand a {
+  min-width: 43px;
+  min-height: 43px;
 }
 
-#aiga-logo {
-  position: fixed;
-  top: 25px;
-  left: 25px;
+.navbar-brand {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 20px !important;
 }
 
-.wide-display {
-  margin-bottom: 100px;
-  width: 100%;
-  margin: 0 auto 100px;
-  max-width: initial;
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-nav > li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.jumbotron {
+  background: $itw-primary-color;
+  padding-top: 90px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+
+  .hero-image img {
+    max-height: 963px;
+  }
+
+  .hero-copy {
+    text-transform: uppercase;
+    margin-top: 7%;
+
+    p {
+      font-weight: bold;
+    }
+
+    .hero-slash img {
+      width: 25px;
+      // margin-top: 45px;
+      margin-bottom: 10%;
+    }
+  }
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase
+}
+
+.overview {
+  display: block;
+  background-image: url(/images/itw2016_landscape-background.png);
+  text-align: center;
+
+  .overview-container {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
 
   .overview-copy {
-    margin: 0 auto;
-    float: none;
-  }
-}
+    color: #fff;
+    margin: 3em auto 3em;
 
-.unlock-fixed {
-  position: absolute !important;
-}
-
-@media (max-width: 1186px) {
-  #aiga-logo {
-    position: absolute;
-  }
-
-  #moon-illustration {
-    display: block;
-    width: 100%;
-  }
-
-  .container-moon-illustration {
-    width: 100%;
-    min-width: inherit;
-  }
-
-  .full-height {
-    height: initial;
-  }
-}
-
-
-
-
-@media (max-width: 910px) {
-  #moon-illustration {
-    display: none;
-  }
-
-  #moon-illustration-no-details {
-    display: block;
-    margin: auto;
-    width: 100%;
-  }
-
-  #event-details {
-    display: block;
-    margin: auto;
-
-    img {
-      margin: 2em 0;
+    h1 {
+      margin-bottom: 1em;
     }
 
-    .event-details-container {
-      width: 240px;
-      display: block;
-      margin: auto;
-      text-align: left;
+    p {
+      font-size: 1.2em;
     }
   }
+}
 
-  #aiga-logo {
-    width: 10px;
-    top:   3%;
-    left:  3%;
-    min-width: 50px;
+#sponsors { display: none }
+
+footer {
+  text-align: center;
+
+  .footer-logo img{
+
+  }
+
+  .footer-copy {
+    margin: 5em auto;
+    color: #000;
+  }
+
+  nav {
+    margin-top: 1em;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    li:first-child {
+      border-right: 2px solid #000;
+    }
+
+    li {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 }
+

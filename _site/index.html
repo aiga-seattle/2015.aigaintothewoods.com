@@ -15,63 +15,102 @@
 </head>
 
   <body>
-    <div id="container" class="container-fluid splash-page full-height">
-  <div class="row full-height">
-    <div class="col-md-12 full-height container-moon-illustration">
-      <img id="aiga-logo" src="/images/aiga-logo-black.svg" alt="AIGA Logo"/>
-      <img id="moon-illustration" src="/images/moon-illustration.png" />
-      <img id="moon-illustration-no-details" src="/images/moon-illustration-no-details.png" />
-
-      <div id="container-overview-copy" class="container-overview-copy">
-        <div id="event-details" class="event-details">
-          <div class="event-details-container">
-            <img src="/images/event-details.png" />
-          </div>
-        </div>
-
-        <div class="overview-copy">
-          <h1>BETWEEN<br/>THE LINES</h1>
-
-          <p>Designing between the lines means looking past what’s in front of you and finding power in the unexpected. Into the Woods 2016 celebrates provocative ideas, integrative thinking, and boundary-defying design.</p>
-
-          <p>That's right, AIGA Seattle’s legendary Into the Woods conference is back, with three days of hands-on workshops, outstanding speakers, and backwoods creative bonding.</p>
-
-          <p class="program-announcement-copy">Speaker And Work-<br/>shop Announcements Coming Soon.</p>
-          <p class="register-copy">Register While There’s Still Space!</p>
-
-          <a class="btn btn-default btn-register" href="https://www.eventbrite.com/e/into-the-woods-conference-2016-tickets-18926152632" role="button">Sign Up</a>
-
-        </div>
+    <header>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="/images/aiga_logo_50px.svg" alt="AIGA Logo" />
+        </a>
       </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Logistics</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+</header>
 
+<section class="jumbotron">
+  <div class="container-fluid">
+    <div class="col-md-1"></div>
+    <div class="hero-image col-md-8">
+      <img src="/images/itw2016-hero.svg" alt="Into The Woods 2016" />
+    </div>
+    <div class="col-md-1"></div>
+    <div class="hero-copy col-md-2">
+      <div class="hero-slash">
+        <img src="/images/slash.svg" />
+      </div>
+      <p>April<br/>8-10<br/>2016</p>
+      <p>Sleeping<br/>Lady<br/>Resort</p>
+      <p>Leaven &#45;<br/>worth<br/>Washing &#45;<br/>ton</p>
+      <div class="hero-slash">
+        <img src="/images/slash.svg" />
+      </div>
     </div>
   </div>
-</div>
+</section>
+
+<section class="overview">
+  <div class="container-fluid overview-container">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 overview-copy">
+      <h1>Between the Lines</h1>
+
+      <p>Designing between the lines means looking past what’s in front of you and finding power in the unexpected. Into the Woods 2016 celebrates provocative ideas, integrative thinking, and boundary-defying design.</p>
+
+      <p>That's right, AIGA Seattle’s legendary Into the Woods conference is back, with three days of hands-on workshops, outstanding speakers, and backwoods creative bonding.</p>
+
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</section>
+
+<section id="sponsors">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Sponsors</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 footer-copy">
+        <div class="footer-logo">
+          <img src="/images/itw2016_logo_footer.svg" />
+        </div>
+        <nav>
+          <ul class="list-inline">
+            <li>Contact Us</li>
+            <li>Follow Us</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</footer>
 
 <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type='text/javascript' src="/javascripts/bootstrap.min.js"></script>
-
+<script src="https://use.typekit.net/sgf1ybn.js"></script>
+<script type='text/javascript'>try{Typekit.load({ async: true });}catch(e){}</script>
 <script type='text/javascript'>
-  $(document).ready(function() {
-    var adjustDivPos = function(){
-      var overviewCopy = $('#container-overview-copy'),
-          moonIllustration = $('#moon-illustration'),
-          aigaLogo = $('#aiga-logo')
-          remainingWidth = $(window).width() - moonIllustration.width();
-
-      if (remainingWidth < 300) {
-        overviewCopy.addClass("wide-display");
-        aigaLogo.addClass("unlock-fixed");
-      } else {
-        overviewCopy.removeClass("wide-display");
-        aigaLogo.removeClass("unlock-fixed");
-      }
-    }
-
-    $(window).resize(adjustDivPos);
-
-    adjustDivPos();
-  });
+  $(document).ready(function() { });
 </script>
   </body>
 </html>
