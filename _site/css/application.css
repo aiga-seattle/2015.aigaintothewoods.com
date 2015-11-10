@@ -5843,7 +5843,7 @@ button.close {
   src: url("/fonts/centurygothic/2F6C56_3_0.eot");
   src: url("/fonts/centurygothic/2F6C56_3_0.eot?#iefix") format("embedded-opentype"), url("/fonts/centurygothic/2F6C56_3_0.woff2") format("woff2"), url("/fonts/centurygothic/2F6C56_3_0.woff") format("woff"), url("/fonts/centurygothic/2F6C56_3_0.ttf") format("truetype"); }
 body {
-  background-color: #f3f2e7;
+  background-color: #f4f4ea;
   font-family: 'CenturyGothicStd-Bold', Helvetica, Arial, sans-serif; }
 
 h1, h2, h3, h4 {
@@ -5872,7 +5872,7 @@ h1, h2, h3, h4 {
   padding-bottom: 20px; }
 
 .jumbotron {
-  background: #f3f2e7;
+  background: #f4f4ea;
   padding-top: 90px;
   padding-bottom: 0px;
   margin-bottom: 0px; }
@@ -5882,16 +5882,22 @@ h1, h2, h3, h4 {
 .overview {
   display: block;
   background-image: url(/images/itw2016_landscape-background.png);
-  text-align: center; }
-  .overview .overview-container {
+  text-align: center;
+  letter-spacing: 6px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000; }
+  .overview .overlay {
     background-color: rgba(0, 0, 0, 0.8); }
   .overview .overview-copy {
     color: #fff;
     margin: 3em auto 3em; }
     .overview .overview-copy h1 {
-      margin-bottom: 1em; }
+      font-size: 3em;
+      margin-bottom: 1.8em; }
     .overview .overview-copy p {
-      font-size: 1.2em; }
+      font-size: 1.8em;
+      margin-bottom: 1.8em; }
 
 footer {
   text-align: center; }

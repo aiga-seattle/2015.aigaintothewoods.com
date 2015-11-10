@@ -2,8 +2,12 @@
   display: block;
   background-image: url(/images/itw2016_landscape-background.png);
   text-align: center;
+  letter-spacing: 6px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #000;
 
-  .overview-container {
+  .overlay {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
@@ -12,11 +16,13 @@
     margin: 3em auto 3em;
 
     h1 {
-      margin-bottom: 1em;
+      font-size: 3em;
+      margin-bottom: 1.8em;
     }
 
     p {
-      font-size: 1.2em;
+      font-size: 1.8em;
+      margin-bottom: 1.8em;
     }
   }
 }
