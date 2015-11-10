@@ -5918,3 +5918,13 @@ footer {
     footer nav li {
       padding-left: 20px;
       padding-right: 20px; }
+
+.subsection {
+  text-align: center; }
+  .subsection h2 {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    display: inline-block;
+    letter-spacing: 6px; }
