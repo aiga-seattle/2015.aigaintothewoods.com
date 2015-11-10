@@ -1,0 +1,22 @@
+.overview {
+  display: block;
+  background-image: url(/images/itw2016_landscape-background.png);
+  text-align: center;
+
+  .overview-container {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .overview-copy {
+    color: #fff;
+    margin: 3em auto 3em;
+
+    h1 {
+      margin-bottom: 1em;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+}

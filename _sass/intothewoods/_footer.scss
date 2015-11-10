@@ -1,0 +1,27 @@
+footer {
+  text-align: center;
+
+  .footer-logo img{
+
+  }
+
+  .footer-copy {
+    margin: 5em auto;
+    color: #000;
+  }
+
+  nav {
+    margin-top: 1em;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    li:first-child {
+      border-right: 2px solid #000;
+    }
+
+    li {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

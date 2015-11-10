@@ -1,0 +1,26 @@
+.navbar {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.navbar-brand a {
+  min-width: 43px;
+  min-height: 43px;
+}
+
+.navbar-brand {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 20px !important;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-nav > li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

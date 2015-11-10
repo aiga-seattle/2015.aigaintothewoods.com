@@ -5846,6 +5846,9 @@ body {
   background-color: #f3f2e7;
   font-family: 'CenturyGothicStd-Bold', Helvetica, Arial, sans-serif; }
 
+h1, h2, h3, h4 {
+  text-transform: uppercase; }
+
 .navbar {
   font-size: 18px;
   text-transform: uppercase; }
@@ -5873,19 +5876,8 @@ body {
   padding-top: 90px;
   padding-bottom: 0px;
   margin-bottom: 0px; }
-  .jumbotron .hero-image img {
-    max-height: 963px; }
-  .jumbotron .hero-copy {
-    text-transform: uppercase;
-    margin-top: 7%; }
-    .jumbotron .hero-copy p {
-      font-weight: bold; }
-    .jumbotron .hero-copy .hero-slash img {
-      width: 25px;
-      margin-bottom: 10%; }
-
-h1, h2, h3, h4 {
-  text-transform: uppercase; }
+  .jumbotron .container-fluid {
+    text-align: center; }
 
 .overview {
   display: block;
@@ -5900,9 +5892,6 @@ h1, h2, h3, h4 {
       margin-bottom: 1em; }
     .overview .overview-copy p {
       font-size: 1.2em; }
-
-#sponsors {
-  display: none; }
 
 footer {
   text-align: center; }
@@ -5928,3 +5917,10 @@ footer {
     padding: 10px;
     display: inline-block;
     letter-spacing: 6px; }
+
+.sponsors {
+  background-color: #000; }
+  .sponsors h2 {
+    color: #fff; }
+  .sponsors .sponsors-roll li {
+    color: #fff; }
