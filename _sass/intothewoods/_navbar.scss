@@ -1,6 +1,8 @@
 .navbar {
   font-size: 18px;
   text-transform: uppercase;
+  font-family: 'CenturyGothicStd', Helvetica, Arial, sans-serif;
+  letter-spacing: 4px;
 }
 
 .navbar-brand a {
@@ -9,11 +11,8 @@
 }
 
 .navbar-brand {
-  display: block;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  margin: 20px !important;
+  margin-top: 17px;
+  margin-left: 0 !important;
 }
 
 .navbar-inverse .navbar-nav > li > a {

@@ -5851,18 +5851,17 @@ h1, h2, h3, h4 {
 
 .navbar {
   font-size: 18px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: 'CenturyGothicStd', Helvetica, Arial, sans-serif;
+  letter-spacing: 4px; }
 
 .navbar-brand a {
   min-width: 43px;
   min-height: 43px; }
 
 .navbar-brand {
-  display: block;
-  width: 50px;
-  height: 50px;
-  padding: 0;
-  margin: 20px !important; }
+  margin-top: 17px;
+  margin-left: 0 !important; }
 
 .navbar-inverse .navbar-nav > li > a {
   color: #fff; }
@@ -5908,11 +5907,13 @@ footer {
     margin-top: 1em;
     font-size: 18px;
     text-transform: uppercase; }
-    footer nav li:first-child {
-      border-right: 2px solid #000; }
-    footer nav li {
-      padding-left: 20px;
-      padding-right: 20px; }
+    footer nav .footer-cta {
+      font-family: 'CenturyGothicStd', Helvetica, Arial, sans-serif; }
+      footer nav .footer-cta > li {
+        padding-left: 20px;
+        padding-right: 20px; }
+      footer nav .footer-cta > li:first-child {
+        border-right: 2px solid #000; }
 
 .speakers-grid img {
   height: 100%;
@@ -5975,5 +5976,8 @@ footer {
   background-color: #000; }
   .sponsors h2 {
     color: #fff; }
-  .sponsors .sponsors-roll li {
-    color: #fff; }
+  .sponsors .sponsors-roll {
+    margin-bottom: 50px; }
+    .sponsors .sponsors-roll .sponsor {
+      color: #fff;
+      width: 15%; }
