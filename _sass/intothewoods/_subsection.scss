@@ -1,5 +1,8 @@
 .subsection {
   text-align: center;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
 
   h2 {
     text-transform: uppercase;
@@ -8,5 +11,22 @@
     padding: 10px;
     display: inline-block;
     letter-spacing: 6px;
+    margin: 50px auto;
   }
+}
+
+.workshops {
+  background-image: url('/images/backgrounds/stripes-moon.jpg');
+}
+
+.accomodations {
+  background-image: url('/images/backgrounds/stripes-building.jpg');
+}
+
+.speakers {
+  background-image: url('/images/backgrounds/stripes-reflections.jpg');
+}
+
+.networking {
+  background-image: url('/images/backgrounds/stripes-logs.jpg');
 }

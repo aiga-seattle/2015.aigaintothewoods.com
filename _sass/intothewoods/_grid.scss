@@ -1,0 +1,54 @@
+.speakers-grid {
+  img {
+    height: 100%;
+    width: 100%
+  }
+
+  .chair {
+    background-image: url('/images/chair.png')
+  }
+
+  .speaker-walsh {
+
+  }
+
+  .speaker-musk {
+
+  }
+
+  .square-landscape {
+    background-image: url('/images/square-landscape.jpg')
+  }
+
+  .square-byrne {
+    background-image: url('/images/square-byrne.jpg')
+  }
+
+  .square-circles {
+    background-image: url('/images/square-circles.jpg')
+  }
+}
+
+.container-fluid.no-gutters {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media (min-width: 992px) {
+  .col-md-7 {
+    width: 56.33333%;
+  }
+  .col-md-5 {
+    width: 43.66667%;
+  }
+}
