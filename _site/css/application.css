@@ -5877,6 +5877,8 @@ h1, h2, h3, h4 {
   margin-bottom: 0px; }
   .jumbotron .container-fluid {
     text-align: center; }
+  .jumbotron img {
+    width: 100%; }
 
 .overview {
   display: block;
