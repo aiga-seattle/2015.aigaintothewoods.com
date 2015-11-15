@@ -5910,6 +5910,8 @@ h1, h2, h3, h4 {
 
 footer {
   text-align: center; }
+  footer a, footer a:hover, footer a:visited {
+    color: #000; }
   footer .footer-copy {
     margin: 5em auto;
     color: #000; }
@@ -5924,6 +5926,8 @@ footer {
         padding-right: 20px; }
       footer nav .footer-cta > li:first-child {
         border-right: 2px solid #000; }
+      footer nav .footer-cta > li:last-child {
+        padding: 0; }
 
 .speakers-grid img {
   height: 100%;
@@ -5992,7 +5996,7 @@ footer {
       color: #fff;
       width: 15%; }
 
-.overview-page section {
+.overview-page > section {
   padding: 38px 0; }
 
 .conference-organizers {
@@ -6014,10 +6018,23 @@ footer {
 .registration-information {
   color: #fff; }
   .registration-information h2 {
-    color: #63E9B9; }
+    color: #63E9B9;
+    margin-bottom: 20px; }
+  .registration-information p {
+    font-size: 19px;
+    letter-spacing: 3px; }
+  .registration-information section {
+    margin-bottom: 42px; }
+  .registration-information .pricing-list {
+    margin-bottom: 20px; }
+  .registration-information .fine-text {
+    font-family: 'CenturyGothicStd', Helvetica, Arial, sans-serif;
+    font-size: 14px; }
+    .registration-information .fine-text:before {
+      content: '*'; }
 
 .conference-description .content {
-  padding-top: 194px; }
+  padding-top: 54px; }
   .conference-description .content h1 {
     width: 515px;
     margin: 0 auto;

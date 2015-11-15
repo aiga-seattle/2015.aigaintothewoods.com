@@ -1,5 +1,5 @@
 .overview-page {
-  section {
+  > section {
     padding: 38px 0;
   }
 }
@@ -40,11 +40,34 @@
 
   h2 {
     color: #63E9B9;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 19px;
+    letter-spacing: 3px;
+  }
+
+  section {
+    margin-bottom: 42px;
+  }
+
+  .pricing-list {
+    margin-bottom: 20px;
+  }
+
+  .fine-text {
+    font-family: 'CenturyGothicStd', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+    &:before {
+      content: '*';
+    }
   }
 }
 
 .conference-description .content{
-  padding-top: 194px;
+  padding-top: 54px;
 
   h1 {
     width: 515px;
