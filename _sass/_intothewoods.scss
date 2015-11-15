@@ -6,13 +6,16 @@ body {
 }
 
 h1, h2, h3, h4 {
-  text-transform: uppercase
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 @import "intothewoods/navbar";
+@import "intothewoods/backgrounds";
 @import "intothewoods/jumbotron";
 @import "intothewoods/overview";
 @import "intothewoods/footer";
 @import "intothewoods/grid";
 @import "intothewoods/subsection";
 @import "intothewoods/sponsors";
+@import "intothewoods/overview-page"

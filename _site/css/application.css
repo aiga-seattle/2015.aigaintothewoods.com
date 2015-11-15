@@ -5847,7 +5847,8 @@ body {
   font-family: 'CenturyGothicStd-Bold', Helvetica, Arial, sans-serif; }
 
 h1, h2, h3, h4 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 4px; }
 
 .navbar {
   font-size: 18px;
@@ -5870,9 +5871,23 @@ h1, h2, h3, h4 {
   padding-top: 20px;
   padding-bottom: 20px; }
 
+.nav-padding {
+  margin-top: 90px;
+  padding-top: 0; }
+
+.background-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000; }
+
+.background-mtn {
+  background-image: url(/images/backgrounds/mountains.jpg); }
+
+.background-sleeping-lady {
+  background-image: url(/images/backgrounds/sleeping-lady.jpg); }
+
 .jumbotron {
   background: #f4f4ea;
-  padding-top: 90px;
   padding-bottom: 0px;
   margin-bottom: 0px; }
   .jumbotron .container-fluid {
@@ -5881,15 +5896,8 @@ h1, h2, h3, h4 {
     width: 100%; }
 
 .overview {
-  display: block;
-  background-image: url(/images/itw2016_landscape-background.png);
   text-align: center;
-  letter-spacing: 6px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #000; }
-  .overview .overlay {
-    background-color: rgba(0, 0, 0, 0.8); }
+  letter-spacing: 6px; }
   .overview .overview-copy {
     color: #fff;
     margin: 3em auto 3em; }
@@ -5983,3 +5991,46 @@ footer {
     .sponsors .sponsors-roll .sponsor {
       color: #fff;
       width: 15%; }
+
+.overview-page section {
+  padding: 38px 0; }
+
+.conference-organizers {
+  color: #fff;
+  background: repeating-linear-gradient(-45deg, #323ac5, #323ac5 44px, #252ab2 44px, #252ab2 88px);
+  text-align: center; }
+  .conference-organizers h2 {
+    padding: 0;
+    margin-top: 0; }
+  .conference-organizers .organizers-list dt {
+    margin-top: 17px;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+  .conference-organizers .organizers-list dd {
+    font-size: 20px;
+    letter-spacing: 2px; }
+
+.registration-information {
+  color: #fff; }
+  .registration-information h2 {
+    color: #63E9B9; }
+
+.conference-description .content {
+  padding-top: 194px; }
+  .conference-description .content h1 {
+    width: 515px;
+    margin: 0 auto;
+    margin-bottom: 27px; }
+  .conference-description .content .tagline {
+    color: #2B38C9;
+    border-bottom: 1px solid #63E9B9;
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 29px;
+    letter-spacing: 2px;
+    margin-bottom: 42px; }
+  .conference-description .content p {
+    font-size: 19px;
+    letter-spacing: 2px;
+    margin-bottom: 33px; }
