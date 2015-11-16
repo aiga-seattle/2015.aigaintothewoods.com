@@ -5861,6 +5861,10 @@ h1, h2, h3, h4 {
   min-height: 43px; }
 
 .navbar-brand {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
   margin-top: 17px;
   margin-left: 0 !important; }
 
