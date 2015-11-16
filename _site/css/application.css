@@ -5886,6 +5886,10 @@ h1, h2, h3, h4 {
 .background-sleeping-lady {
   background-image: url(/images/backgrounds/sleeping-lady.jpg); }
 
+.background-woods {
+  background-image: url(/images/backgrounds/woods.jpg);
+  background-color: #232122; }
+
 .jumbotron {
   background: #f4f4ea;
   padding-bottom: 0px;
@@ -6051,3 +6055,45 @@ footer {
     font-size: 19px;
     letter-spacing: 2px;
     margin-bottom: 33px; }
+
+.schedule-page {
+  color: #fff; }
+  .schedule-page .conference-schedule {
+    text-align: center;
+    padding-bottom: 77px; }
+    .schedule-page .conference-schedule .title {
+      color: #63E9B9; }
+      .schedule-page .conference-schedule .title h1 {
+        font-size: 30px;
+        margin-top: 77px; }
+      .schedule-page .conference-schedule .title p {
+        font-family: "CenturyGothicStd", Helvetica, Arial, sans-serif;
+        font-size: 17px; }
+  .schedule-page .schedule-block-day {
+    border-bottom: 1px solid #63E9B9;
+    padding: 16px;
+    letter-spacing: 3px; }
+    .schedule-page .schedule-block-day:last-child {
+      border-bottom: inherit; }
+    .schedule-page .schedule-block-day h2 {
+      font-size: 26px;
+      margin-bottom: 21px; }
+    .schedule-page .schedule-block-day dt {
+      font-size: 26px; }
+    .schedule-page .schedule-block-day dd {
+      font-size: 21px;
+      margin-bottom: 21px; }
+  .schedule-page .conference-venue {
+    background-color: #63E9B9;
+    color: #000;
+    padding-top: 115px;
+    letter-spacing: 3px; }
+    .schedule-page .conference-venue h2 {
+      color: #F7F5AA;
+      font-size: 30px;
+      margin: 0 0 15px;
+      padding: 0; }
+    .schedule-page .conference-venue p {
+      font-size: 19px; }
+    .schedule-page .conference-venue section {
+      margin: 0 0 48px; }

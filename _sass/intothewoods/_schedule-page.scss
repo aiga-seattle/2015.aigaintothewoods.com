@@ -1,0 +1,68 @@
+.schedule-page {
+  color: #fff;
+
+  .conference-schedule {
+    text-align: center;
+    padding-bottom: 77px;
+
+    .title {
+      color: $itw-secondary-color;
+
+      h1 {
+        font-size: 30px;
+        margin-top: 77px;
+      }
+
+      p {
+        font-family: $itw-font-normal;
+        font-size: 17px;
+      }
+    }
+  }
+
+  .schedule-block-day {
+    border-bottom: 1px solid $itw-secondary-color;
+    padding: 16px;
+    letter-spacing: 3px;
+
+    &:last-child {
+      border-bottom: inherit;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 21px;
+    }
+
+    dt {
+      font-size: 26px;
+    }
+
+    dd {
+      font-size: 21px;
+      margin-bottom: 21px;
+    }
+  }
+
+  .conference-venue {
+    background-color: $itw-secondary-color;
+    color: #000;
+    padding-top: 115px;
+    letter-spacing: 3px;
+
+    h2 {
+      color: #F7F5AA;
+      font-size: 30px;
+      margin: 0 0 15px;
+      padding: 0;
+    }
+
+    p {
+      font-size: 19px;
+    }
+
+    section {
+      margin: 0 0 48px;
+    }
+  }
+}

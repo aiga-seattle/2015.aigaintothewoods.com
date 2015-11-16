@@ -1,4 +1,8 @@
 $itw-primary-color: rgb(244, 244, 234 ); // Cream Color
+$itw-secondary-color: #63E9B9;
+
+$itw-font-normal: 'CenturyGothicStd', Helvetica, Arial, sans-serif;
+$itw-font-bold: 'CenturyGothicStd-Bold', Helvetica, Arial, sans-serif;
 
 body {
   background-color: $itw-primary-color;
@@ -18,4 +22,5 @@ h1, h2, h3, h4 {
 @import "intothewoods/grid";
 @import "intothewoods/subsection";
 @import "intothewoods/sponsors";
-@import "intothewoods/overview-page"
+@import "intothewoods/overview-page";
+@import "intothewoods/schedule-page";
