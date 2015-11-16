@@ -5959,10 +5959,10 @@ footer {
   padding-left: 0; }
 
 @media (min-width: 992px) {
-  .col-md-7 {
+  .col-sm-7 {
     width: 56.33333%; }
 
-  .col-md-5 {
+  .col-sm-5 {
     width: 43.66667%; } }
 .subsection {
   text-align: center;
