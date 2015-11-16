@@ -5869,7 +5869,11 @@ h1, h2, h3, h4 {
   margin-left: 0 !important; }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #fff; }
+  color: #fff;
+  padding: 0;
+  margin: 15px; }
+  .navbar-inverse .navbar-nav > li > a.active {
+    border-bottom: 3px solid #fff; }
 
 .navbar-nav > li {
   padding-top: 20px;

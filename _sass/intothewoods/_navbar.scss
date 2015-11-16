@@ -23,6 +23,12 @@
 
 .navbar-inverse .navbar-nav > li > a {
   color: #fff;
+  padding: 0;
+  margin: 15px;
+
+  &.active {
+    border-bottom: 3px solid #fff;
+  }
 }
 
 .navbar-nav > li {

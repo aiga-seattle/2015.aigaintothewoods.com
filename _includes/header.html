@@ -8,11 +8,17 @@
           </a>
         </div>
         <ul class="nav navbar-nav">
-          <li><a href="/overview.html">Overview</a></li>
-          <li><a href="#">Speakers</a></li>
-          <li><a href="#">Workshops</a></li>
-          <li><a href="/schedule.html">Schedule</a></li>
-          <li><a href="https://www.eventbrite.com/e/into-the-woods-conference-2016-tickets-18926152632">Register</a></li>
+          {% for link in site.data.navigation %}
+            {% assign current = '' %}
+
+            {% if page.url == link.url %}
+              {% assign current = 'active' %}
+            {% endif %}
+
+            <li>
+              <a class="{{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+            </li>
+          {% endfor %}
         </ul>
       </div><!--/.nav-collapse -->
     </div>
