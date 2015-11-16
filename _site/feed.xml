@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Into The Woods 2016</title>
+    <description>Designing between the lines means looking past what’s in front of you and finding power in the nexpected. Into the Woods 2016 celebrates provocative ideas, integrative thinking, and boundary-defying design.
+</description>
+    <link>http://www.aigaintothewoods.com//</link>
+    <atom:link href="http://www.aigaintothewoods.com//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 16 Nov 2015 09:39:38 -0800</pubDate>
+    <lastBuildDate>Mon, 16 Nov 2015 09:39:38 -0800</lastBuildDate>
+    <generator>Jekyll v3.0.0</generator>
+    
+  </channel>
+</rss>
