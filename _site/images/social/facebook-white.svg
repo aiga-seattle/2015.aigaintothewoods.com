@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0,0.077 L16.924,0.077 L16.924,17 L0,17 L0,0.077 Z"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSLayerGroup">
+            <mask id="mask-2" sketch:name="Clip 2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path d="M10.7031,8.5033 L9.2381,8.5033 L9.2381,13.7293 L7.0641,13.7293 L7.0641,8.5033 L6.0321,8.5033 L6.0321,6.6583 L7.0641,6.6583 L7.0641,5.4623 C7.0641,4.6083 7.4701,3.2703 9.2561,3.2703 L10.8661,3.2773 L10.8661,5.0693 L9.6981,5.0693 C9.5071,5.0693 9.2381,5.1663 9.2381,5.5713 L9.2381,6.6583 L10.8921,6.6583 L10.7031,8.5033 Z M8.4621,0.0773 C3.7901,0.0773 0.0001,3.8663 0.0001,8.5393 C0.0001,13.2123 3.7901,17.0003 8.4621,17.0003 C13.1351,17.0003 16.9241,13.2123 16.9241,8.5393 C16.9241,3.8663 13.1351,0.0773 8.4621,0.0773 L8.4621,0.0773 Z" id="Fill-1" fill="#F6F4EC" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

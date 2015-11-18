@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0,0.077 L16.925,0.077 L16.925,17 L0,17"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g sketch:type="MSLayerGroup">
+            <mask id="mask-2" sketch:name="Clip 2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-2"></g>
+            <path d="M10.7353,13.4672 C10.3873,13.4672 8.4573,13.4222 7.9633,13.4222 C7.4713,13.4222 4.9023,12.6222 4.9023,9.7942 C4.9023,9.2902 4.8993,8.7842 4.8993,8.2812 C4.8983,7.8102 4.8873,7.3422 4.8863,6.8742 L4.8863,6.4652 C4.8833,5.7532 4.8203,4.9532 5.0493,4.2682 C5.2263,3.7472 5.6393,3.5392 6.1503,3.5392 C7.3853,3.5392 7.4683,4.7972 7.4713,6.0622 L11.0403,6.0622 C11.6053,6.0622 12.0283,6.6352 12.0283,7.5122 C12.0283,8.3892 11.1133,8.5862 10.6343,8.5862 L7.4313,8.5862 C7.4163,9.1222 7.3983,9.5602 7.3983,9.8252 C7.3983,10.3852 7.6173,10.9902 8.9793,10.9902 L10.8973,10.9902 C11.3743,10.9902 12.0863,11.3512 12.0863,12.3632 C12.0863,13.3742 11.0863,13.4672 10.7353,13.4672 M8.4623,0.0772 C3.7873,0.0772 0.0003,3.8662 0.0003,8.5392 C0.0003,13.2122 3.7873,17.0002 8.4623,17.0002 C13.1363,17.0002 16.9243,13.2122 16.9243,8.5392 C16.9243,3.8662 13.1363,0.0772 8.4623,0.0772" id="Fill-1" fill="#F6F4EC" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>
