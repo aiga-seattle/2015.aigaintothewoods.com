@@ -7,10 +7,28 @@
 
   .sponsors-roll {
     margin-bottom: 50px;
+  }
+
+  .sponsor {
+    color: #fff;
+    width: 15%
+  }
+
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 19px;
+    }
+
+    .sponsors-roll {
+      margin-bottom: 0;
+    }
 
     .sponsor {
-      color: #fff;
-      width: 15%
+      display: inline-block;
+      width: 100%;
+      margin: 25px auto;
     }
   }
+
 }
+

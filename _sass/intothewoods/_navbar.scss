@@ -45,6 +45,7 @@
   display: none;
 }
 
+
 @media (min-width: 768px) {
   .nav-padding {
     margin-top: 90px;
@@ -69,5 +70,9 @@
 @media (max-width: 768px) {
   .visible-xs {
     display: inline-block !important;
+  }
+
+  .hidden-xs {
+    display: none;
   }
 }

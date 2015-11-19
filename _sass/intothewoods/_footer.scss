@@ -6,7 +6,8 @@ footer {
   }
 
   .footer-copy {
-    margin: 5em auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
     color: #000;
   }
 
@@ -17,8 +18,6 @@ footer {
 
 
     .footer-cta {
-      font-family: 'CenturyGothicStd', Helvetica, Arial, sans-serif;
-
       > li {
         padding-left: 20px;
         padding-right: 20px;
@@ -30,6 +29,26 @@ footer {
 
       > li:last-child {
         padding: 0;
+      }
+
+      @media (max-width: $screen-sm-min) {
+        > li {
+          display: inline-block;
+          width: 100%;
+        }
+
+        > li:first-child {
+          border-right: none;
+        }
+
+        .footer-copy {
+          margin-top: 2em;
+          margin-bottom: 2em;
+        }
+
+        .social-links {
+          margin-top: 15px;
+        }
       }
     }
   }

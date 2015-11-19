@@ -10,4 +10,22 @@
   img {
     width: 100%;
   }
+
+  .visible-mobile {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: block;
+  }
+
+  @media (max-width: 340px) {
+    .visible-mobile {
+      display: block;
+    }
+
+    .hide-mobile {
+      display: none;
+    }
+  }
 }

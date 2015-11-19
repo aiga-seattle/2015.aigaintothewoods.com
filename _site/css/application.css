@@ -5844,7 +5844,8 @@ button.close {
   src: url("/fonts/centurygothic/2F6C56_3_0.eot?#iefix") format("embedded-opentype"), url("/fonts/centurygothic/2F6C56_3_0.woff2") format("woff2"), url("/fonts/centurygothic/2F6C56_3_0.woff") format("woff"), url("/fonts/centurygothic/2F6C56_3_0.ttf") format("truetype"); }
 body {
   background-color: #f4f4ea;
-  font-family: 'CenturyGothicStd-Bold', Helvetica, Arial, sans-serif; }
+  font-family: 'CenturyGothicStd-Bold', Helvetica, Arial, sans-serif;
+  letter-spacing: 4px; }
 
 h1, h2, h3, h4 {
   text-transform: uppercase;
@@ -5902,7 +5903,10 @@ h1, h2, h3, h4 {
     margin-top: 20px; } }
 @media (max-width: 768px) {
   .visible-xs {
-    display: inline-block !important; } }
+    display: inline-block !important; }
+
+  .hidden-xs {
+    display: none; } }
 .background-cover {
   background-repeat: no-repeat;
   background-size: cover;
@@ -5916,7 +5920,8 @@ h1, h2, h3, h4 {
 
 .background-woods {
   background-image: url(/images/backgrounds/woods.jpg);
-  background-color: #232122; }
+  background-color: #232122;
+  background-attachment: fixed; }
 
 .jumbotron {
   background: #f4f4ea;
@@ -5926,6 +5931,15 @@ h1, h2, h3, h4 {
     text-align: center; }
   .jumbotron img {
     width: 100%; }
+  .jumbotron .visible-mobile {
+    display: none; }
+  .jumbotron .hide-mobile {
+    display: block; }
+  @media (max-width: 340px) {
+    .jumbotron .visible-mobile {
+      display: block; }
+    .jumbotron .hide-mobile {
+      display: none; } }
 
 .overview {
   text-align: center;
@@ -5945,21 +5959,31 @@ footer {
   footer a, footer a:hover, footer a:visited {
     color: #000; }
   footer .footer-copy {
-    margin: 5em auto;
+    margin-top: 5em;
+    margin-bottom: 5em;
     color: #000; }
   footer nav {
     margin-top: 1em;
     font-size: 18px;
     text-transform: uppercase; }
-    footer nav .footer-cta {
-      font-family: 'CenturyGothicStd', Helvetica, Arial, sans-serif; }
+    footer nav .footer-cta > li {
+      padding-left: 20px;
+      padding-right: 20px; }
+    footer nav .footer-cta > li:first-child {
+      border-right: 2px solid #000; }
+    footer nav .footer-cta > li:last-child {
+      padding: 0; }
+    @media (max-width: 768px) {
       footer nav .footer-cta > li {
-        padding-left: 20px;
-        padding-right: 20px; }
+        display: inline-block;
+        width: 100%; }
       footer nav .footer-cta > li:first-child {
-        border-right: 2px solid #000; }
-      footer nav .footer-cta > li:last-child {
-        padding: 0; }
+        border-right: none; }
+      footer nav .footer-cta .footer-copy {
+        margin-top: 2em;
+        margin-bottom: 2em; }
+      footer nav .footer-cta .social-links {
+        margin-top: 15px; } }
 
 .speakers-grid img {
   height: 100%;
@@ -6005,6 +6029,10 @@ footer {
     display: inline-block;
     letter-spacing: 6px;
     margin: 50px auto; }
+  @media (max-width: 768px) {
+    .subsection h2 {
+      font-size: 19px;
+      margin: 15px auto; } }
 
 .workshops {
   background-image: url("/images/backgrounds/stripes-moon.jpg"); }
@@ -6024,9 +6052,18 @@ footer {
     color: #fff; }
   .sponsors .sponsors-roll {
     margin-bottom: 50px; }
-    .sponsors .sponsors-roll .sponsor {
-      color: #fff;
-      width: 15%; }
+  .sponsors .sponsor {
+    color: #fff;
+    width: 15%; }
+  @media (max-width: 768px) {
+    .sponsors h2 {
+      font-size: 19px; }
+    .sponsors .sponsors-roll {
+      margin-bottom: 0; }
+    .sponsors .sponsor {
+      display: inline-block;
+      width: 100%;
+      margin: 25px auto; } }
 
 .overview-page > section {
   padding: 38px 0; }
