@@ -5916,7 +5916,9 @@ h1, h2, h3, h4 {
   background-image: url(/images/backgrounds/mountains.jpg); }
 
 .background-sleeping-lady {
-  background-image: url(/images/backgrounds/sleeping-lady.jpg); }
+  background-color: #fff;
+  background-image: url(/images/backgrounds/sleeping-lady.jpg);
+  background-attachment: fixed; }
 
 .background-woods {
   background-image: url(/images/backgrounds/woods.jpg);
@@ -5981,7 +5983,9 @@ footer {
         border-right: none; }
       footer nav .footer-cta .footer-copy {
         margin-top: 2em;
-        margin-bottom: 2em; }
+        margin-bottom: 2em;
+        padding-left: 2em;
+        padding-right: 2em; }
       footer nav .footer-cta .social-links {
         margin-top: 15px; } }
 
