@@ -5995,6 +5995,89 @@ h3, h4 {
         width: 100%;
         margin: 25px auto; } }
 
+.page-programming .wrapper-programming {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  background-image: url(/images/backgrounds/mountains.jpg);
+  background-color: #232122;
+  background-attachment: fixed;
+  color: #fff; }
+  .page-programming .wrapper-programming h1 {
+    color: #63E9B9; }
+  .page-programming .wrapper-programming a {
+    color: #fff;
+    text-decoration: underline; }
+.page-programming .wrapper-speakers {
+  background-color: #63E9B9; }
+  .page-programming .wrapper-speakers h2 {
+    color: #F7F5AA; }
+  .page-programming .wrapper-speakers img {
+    vertical-align: middle;
+    float: right;
+    padding-left: 20px; }
+  .page-programming .wrapper-speakers .content {
+    padding-top: 50px;
+    padding-bottom: 40px; }
+  .page-programming .wrapper-speakers section {
+    padding: 0; }
+
+.page-overview .wrapper-overview {
+  text-align: center;
+  color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  background-image: url(/images/backgrounds/sleeping-lady.jpg);
+  background-color: #fff;
+  background-attachment: fixed; }
+  .page-overview .wrapper-overview h1 {
+    margin-bottom: 50px; }
+.page-overview .wrapper-history {
+  background-color: #63E9B9; }
+  .page-overview .wrapper-history h2 {
+    color: #F7F5AA; }
+.page-overview .wrapper-credits {
+  color: #fff;
+  background: repeating-linear-gradient(-45deg, #323ac5, #323ac5 44px, #252ab2 44px, #252ab2 88px); }
+  .page-overview .wrapper-credits h2 {
+    padding: 0;
+    margin-top: 0; }
+  .page-overview .wrapper-credits p {
+    margin-bottom: 50px; }
+  .page-overview .wrapper-credits .credits-group {
+    margin-bottom: 50px; }
+    .page-overview .wrapper-credits .credits-group h3 {
+      font-size: 25px; }
+  .page-overview .wrapper-credits .list-credits dt {
+    margin-top: 17px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+  .page-overview .wrapper-credits .list-credits dd {
+    font-size: 16px;
+    letter-spacing: 2px; }
+
+.page-register .wrapper-registration {
+  background-color: #63E9B9; }
+  .page-register .wrapper-registration h1, .page-register .wrapper-registration h2, .page-register .wrapper-registration h3 {
+    color: #F7F5AA; }
+  .page-register .wrapper-registration h1 {
+    display: none; }
+  .page-register .wrapper-registration .power-by {
+    color: #fff; }
+.page-register .wrapper-contact-us {
+  color: #fff;
+  background: repeating-linear-gradient(-45deg, #323ac5, #323ac5 44px, #252ab2 44px, #252ab2 88px); }
+  .page-register .wrapper-contact-us .list-contact-us dt {
+    margin-top: 17px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+  .page-register .wrapper-contact-us .list-contact-us dd {
+    font-size: 16px;
+    letter-spacing: 2px; }
+
 .navbar {
   font-size: 18px;
   text-transform: uppercase;

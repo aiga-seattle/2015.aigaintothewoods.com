@@ -208,6 +208,157 @@ h3, h4 {
   }
 }
 
+.page-programming {
+  .wrapper-programming {
+    @include make-background-cover();
+    background-image: url(/images/backgrounds/mountains.jpg);
+    background-color: rgb(35, 33, 34);
+    background-attachment: fixed;
+
+    color: #fff;
+
+    h1 {
+      color: $itw-green;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  .wrapper-speakers {
+    background-color: $itw-green;
+
+    h2 {
+      color: $itw-yellow;
+    }
+
+    img {
+      vertical-align: middle;
+      float: right;
+      padding-left: 20px;
+    }
+
+    .content {
+      padding-top: 50px;
+      padding-bottom: 40px;
+    }
+
+    section {
+      padding: 0;
+    }
+  }
+}
+
+.page-overview {
+  .wrapper-overview {
+    text-align: center;
+    color: #000;
+
+    @include make-background-cover();
+    background-image: url(/images/backgrounds/sleeping-lady.jpg);
+    background-color: #fff;
+    background-attachment: fixed;
+
+    h1 {
+      margin-bottom: 50px;
+    }
+  }
+
+  .wrapper-history {
+    background-color: $itw-green;
+
+    h2 {
+      color: $itw-yellow;
+    }
+  }
+
+  .wrapper-credits {
+    color: #fff;
+    background: repeating-linear-gradient(
+      -45deg,
+      rgb(50, 58, 197),
+      rgb(50, 58, 197) 44px,
+      rgb(37, 42, 178) 44px,
+      rgb(37, 42, 178) 88px
+    );
+
+    h2 {
+      padding: 0;
+      margin-top: 0;
+    }
+
+    p {
+      margin-bottom: 50px;
+    }
+
+    .credits-group {
+      margin-bottom: 50px;
+
+      h3 {
+        font-size: 25px;
+      }
+    }
+
+    .list-credits {
+      dt {
+        margin-top: 17px;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
+
+      dd {
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+    }
+
+  }
+}
+
+.page-register {
+  .wrapper-registration {
+    background-color: $itw-green;
+
+    h1, h2, h3 {
+      color: $itw-yellow;
+    }
+
+    h1 { display: none; }
+
+    .power-by {
+      color: #fff;
+    }
+  }
+
+  .wrapper-contact-us {
+    color: #fff;
+    background: repeating-linear-gradient(
+      -45deg,
+      rgb(50, 58, 197),
+      rgb(50, 58, 197) 44px,
+      rgb(37, 42, 178) 44px,
+      rgb(37, 42, 178) 88px
+    );
+
+    .list-contact-us {
+      dt {
+        margin-top: 17px;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
+
+      dd {
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
 // Old Styles
 
 .navbar {
