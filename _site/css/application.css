@@ -5845,8 +5845,103 @@ button.close {
 body {
   background-color: #f4f4ea;
   font-family: 'CenturyGothicStd-Bold', Helvetica, Arial, sans-serif;
-  letter-spacing: 4px; }
+  letter-spacing: 2px;
+  font-size: 19px; }
+
+p {
+  margin: 0 0 30px; }
 
 h1, h2, h3, h4 {
   text-transform: uppercase;
   letter-spacing: 4px; }
+
+h1 {
+  font-size: 30px; }
+  h1 small {
+    font-size: 17px; }
+
+h2 {
+  font-size: 26px; }
+
+h3, h4 {
+  font-size: 19px; }
+
+.nav-padding {
+  padding-top: 50px; }
+
+.page-workshops .content, .page-schedule .content, .page-register .content,
+.page-programming .content, .page-overview .content {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .page-workshops .content, .page-schedule .content, .page-register .content,
+    .page-programming .content, .page-overview .content {
+      float: left;
+      width: 50%; } }
+  @media (min-width: 992px) {
+    .page-workshops .content, .page-schedule .content, .page-register .content,
+    .page-programming .content, .page-overview .content {
+      margin-left: 25%; } }
+  .page-workshops .content > section, .page-schedule .content > section, .page-register .content > section,
+  .page-programming .content > section, .page-overview .content > section {
+    padding-top: 50px;
+    padding-bottom: 40px; }
+  .page-workshops .content a, .page-schedule .content a, .page-register .content a,
+  .page-programming .content a, .page-overview .content a {
+    color: #000;
+    text-decoration: underline; }
+
+.wrapper {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .wrapper:before, .wrapper:after {
+    content: " ";
+    display: table; }
+  .wrapper:after {
+    clear: both; }
+
+.page-schedule .wrapper-conference-schedule {
+  text-align: center;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  background-image: url(/images/backgrounds/woods.jpg);
+  background-color: #232122;
+  background-attachment: fixed; }
+  .page-schedule .wrapper-conference-schedule h1 {
+    color: #63E9B9; }
+    .page-schedule .wrapper-conference-schedule h1 small {
+      color: #63E9B9;
+      font-size: 17px;
+      font-family: 'CenturyGothicStd-BoldItalic', Helvetica, Arial, sans-serif; }
+  .page-schedule .wrapper-conference-schedule section:first-child {
+    border-bottom: none; }
+  .page-schedule .wrapper-conference-schedule .schedule-day-block {
+    border-bottom: 1px solid #63E9B9;
+    padding: 16px; }
+    .page-schedule .wrapper-conference-schedule .schedule-day-block:last-child {
+      border-bottom: none; }
+    .page-schedule .wrapper-conference-schedule .schedule-day-block h2 {
+      margin-bottom: 21px; }
+    .page-schedule .wrapper-conference-schedule .schedule-day-block dt {
+      font-size: 26px; }
+    .page-schedule .wrapper-conference-schedule .schedule-day-block dd {
+      font-size: 21px;
+      margin-bottom: 21px; }
+.page-schedule .wrapper-conference-details {
+  background-color: #63E9B9; }
+  .page-schedule .wrapper-conference-details h2 {
+    color: #F7F5AA; }
+  .page-schedule .wrapper-conference-details section {
+    margin-bottom: 50px; }
+    .page-schedule .wrapper-conference-details section:last-child {
+      margin-bottom: 0px; }

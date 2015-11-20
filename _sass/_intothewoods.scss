@@ -1,5 +1,7 @@
 $itw-primary-color: rgb(244, 244, 234 ); // Cream Color
-$itw-secondary-color: #63E9B9;
+
+$itw-green: #63E9B9;
+$itw-yellow: #F7F5AA;
 
 $itw-font-normal: 'CenturyGothicStd', Helvetica, Arial, sans-serif;
 $itw-font-bold: 'CenturyGothicStd-Bold', Helvetica, Arial, sans-serif;
@@ -7,10 +9,135 @@ $itw-font-bold: 'CenturyGothicStd-Bold', Helvetica, Arial, sans-serif;
 body {
   background-color: $itw-primary-color;
   font-family: 'CenturyGothicStd-Bold', Helvetica, Arial, sans-serif;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+
+  font-size: 19px;
+}
+
+p {
+  margin: 0 0 30px;
 }
 
 h1, h2, h3, h4 {
   text-transform: uppercase;
   letter-spacing: 4px;
+}
+
+h1 {
+  font-size: 30px;
+
+  small {
+    font-size: 17px;
+  }
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3, h4 {
+  font-size: 19px;
+}
+
+// Mixins
+@mixin make-background-cover() {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+}
+
+// Grid
+
+.nav-padding {
+  padding-top: 50px;
+}
+
+.page-workshops, .page-schedule, .page-register,
+.page-programming, .page-overview {
+  .content {
+    @include make-md-column(6);
+    @include make-md-column-offset(3);
+
+    @include make-xs-column(12);
+
+    > section {
+      padding-top: 50px;
+      padding-bottom: 40px;
+    }
+
+    a {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+}
+
+.wrapper {
+  @include make-row();
+}
+
+
+// Sections
+.page-schedule {
+  .wrapper-conference-schedule {
+    text-align: center;
+    color: #fff;
+
+    @include make-background-cover();
+    background-image: url(/images/backgrounds/woods.jpg);
+    background-color: rgb(35, 33, 34);
+    background-attachment: fixed;
+
+    h1 {
+      color: $itw-green;
+
+      small {
+        color: $itw-green;
+        font-size: 17px;
+        font-family: 'CenturyGothicStd-BoldItalic', Helvetica, Arial, sans-serif;
+      }
+    }
+
+    section:first-child {
+      border-bottom: none;
+    }
+
+    .schedule-day-block {
+      border-bottom: 1px solid $itw-green;
+      padding: 16px;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      h2 {
+        margin-bottom: 21px;
+      }
+
+      dt {
+        font-size: 26px;
+      }
+
+      dd {
+        font-size: 21px;
+        margin-bottom: 21px;
+      }
+    }
+  }
+
+  .wrapper-conference-details {
+    background-color: $itw-green;
+
+    h2 {
+      color: $itw-yellow;
+    }
+
+    section {
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
 }
