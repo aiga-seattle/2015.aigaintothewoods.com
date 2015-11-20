@@ -6117,7 +6117,7 @@ h3, h4 {
 
 @media (min-width: 768px) {
   .nav-padding {
-    margin-top: 90px; }
+    margin-top: 64px; }
 
   .navbar-header {
     padding: 10px 0px 10px 10px; }
@@ -6166,3 +6166,110 @@ footer {
         padding-right: 2em; }
       footer nav .footer-cta .social-links {
         margin-top: 15px; } }
+
+.background-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000; }
+
+.background-mtn {
+  background-image: url(/images/backgrounds/mountains.jpg); }
+
+.background-sleeping-lady {
+  background-color: #fff;
+  background-image: url(/images/backgrounds/sleeping-lady.jpg);
+  background-attachment: fixed; }
+
+.background-woods {
+  background-image: url(/images/backgrounds/woods.jpg);
+  background-color: #232122;
+  background-attachment: fixed; }
+
+.speakers-grid img {
+  height: 100%;
+  width: 100%; }
+.speakers-grid .chair {
+  background-image: url("/images/chair.png"); }
+.speakers-grid .square-landscape {
+  background-image: url("/images/square-landscape.jpg"); }
+.speakers-grid .square-byrne {
+  background-image: url("/images/square-byrne.jpg"); }
+.speakers-grid .square-circles {
+  background-image: url("/images/square-circles.jpg"); }
+
+.container-fluid.no-gutters {
+  padding-right: 0;
+  padding-left: 0; }
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0; }
+
+@media (min-width: 992px) {
+  .col-xs-7 {
+    width: 56.33333%; }
+
+  .col-xs-5 {
+    width: 43.66667%; } }
+.subsection {
+  text-align: center;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover; }
+  .subsection h2 {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    display: inline-block;
+    letter-spacing: 6px;
+    margin: 50px auto; }
+  @media (max-width: 768px) {
+    .subsection h2 {
+      font-size: 19px;
+      margin: 15px auto; } }
+
+.workshops {
+  background-image: url("/images/backgrounds/stripes-moon.jpg"); }
+
+.accomodations {
+  background-image: url("/images/backgrounds/stripes-building.jpg"); }
+
+.speakers {
+  background-image: url("/images/backgrounds/stripes-reflections.jpg"); }
+
+.networking {
+  background-image: url("/images/backgrounds/stripes-logs.jpg"); }
+
+.jumbotron {
+  background: #f4f4ea;
+  padding-bottom: 0px;
+  margin-bottom: 0px; }
+  .jumbotron .container-fluid {
+    text-align: center; }
+  .jumbotron img {
+    width: 100%; }
+  .jumbotron .visible-mobile {
+    display: none; }
+  .jumbotron .hide-mobile {
+    display: block; }
+  @media (max-width: 340px) {
+    .jumbotron .visible-mobile {
+      display: block; }
+    .jumbotron .hide-mobile {
+      display: none; } }
+
+.overview {
+  text-align: center; }
+  .overview .overview-copy {
+    color: #fff;
+    margin: 3em auto 3em; }
+    .overview .overview-copy h1 {
+      margin-bottom: 1.8em; }
+    .overview .overview-copy p {
+      margin-bottom: 1.8em; }
