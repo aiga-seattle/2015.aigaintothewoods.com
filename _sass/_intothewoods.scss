@@ -101,28 +101,6 @@ h3, h4 {
     section:first-child {
       border-bottom: none;
     }
-
-    .schedule-day-block {
-      border-bottom: 1px solid $itw-green;
-      padding: 16px;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      h2 {
-        margin-bottom: 21px;
-      }
-
-      dt {
-        font-size: 26px;
-      }
-
-      dd {
-        font-size: 21px;
-        margin-bottom: 21px;
-      }
-    }
   }
 
   .wrapper-conference-details {
@@ -137,6 +115,233 @@ h3, h4 {
 
       &:last-child {
         margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.schedule-day-block {
+  border-bottom: 1px solid $itw-green;
+  padding: 16px;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  h2 {
+    margin-bottom: 21px;
+  }
+
+  dt {
+    font-size: 26px;
+  }
+
+  dd {
+    font-size: 21px;
+    margin-bottom: 21px;
+  }
+}
+
+.wrapper-workshops {
+  text-align: center;
+  color: #fff;
+
+  @include make-background-cover();
+  background-image: url(/images/backgrounds/woods.jpg);
+  background-color: rgb(35, 33, 34);
+  background-attachment: fixed;
+
+  h1 {
+    color: $itw-green;
+
+    small {
+      color: $itw-green;
+      font-size: 17px;
+      font-family: 'CenturyGothicStd-BoldItalic', Helvetica, Arial, sans-serif;
+    }
+  }
+
+  section:first-child {
+    border-bottom: none;
+  }
+}
+
+.sponsors {
+  background-color: #000;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  .content {
+    @include make-xs-column(12);
+
+    h2 {
+      color: #fff;
+      margin-bottom: 50px;
+    }
+
+    .sponsors-roll {
+      margin-bottom: 50px;
+    }
+
+    .sponsor {
+      color: #fff;
+      width: 15%
+    }
+
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 19px;
+      }
+
+      .sponsors-roll {
+        margin-bottom: 0;
+      }
+
+      .sponsor {
+        display: inline-block;
+        width: 100%;
+        margin: 25px auto;
+      }
+    }
+
+  }
+}
+
+// Old Styles
+
+.navbar {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'CenturyGothicStd', Helvetica, Arial, sans-serif;
+  letter-spacing: 4px;
+}
+
+.navbar-brand a {
+  min-width: 43px;
+  min-height: 43px;
+}
+
+.navbar-brand {
+  width: 30px;
+  height: 30px;
+  display: block;
+  padding: 0;
+  margin: 10px;
+}
+
+.navbar-header {
+  margin: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  padding: 0;
+  display: inline-block;
+
+  &.active {
+    border-bottom: 3px solid #fff;
+  }
+}
+
+.navbar-nav > li {
+  padding: 15px;
+}
+
+.nav-padding {
+  margin-top: 50px;
+  padding-top: 0;
+}
+
+.visible-xs {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .nav-padding {
+    margin-top: 90px;
+  }
+
+  .navbar-header {
+    padding: 10px 0px 10px 10px;
+  }
+
+  .navbar-brand {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar-nav > li {
+    margin-top: 20px;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .visible-xs {
+    display: inline-block !important;
+  }
+
+  .hidden-xs {
+    display: none;
+  }
+}
+
+footer {
+  text-align: center;
+
+  a, a:hover, a:visited {
+    color: #000;
+  }
+
+  .footer-copy {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    color: #000;
+  }
+
+  nav {
+    margin-top: 1em;
+    font-size: 18px;
+    text-transform: uppercase;
+
+
+    .footer-cta {
+      > li {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      > li:first-child {
+        border-right: 2px solid #000;
+      }
+
+      > li:last-child {
+        padding: 0;
+      }
+
+      @media (max-width: $screen-sm-min) {
+        > li {
+          display: inline-block;
+          width: 100%;
+        }
+
+        > li:first-child {
+          border-right: none;
+        }
+
+        .footer-copy {
+          margin-top: 2em;
+          margin-bottom: 2em;
+          padding-left: 2em;
+          padding-right: 2em;
+        }
+
+        .social-links {
+          margin-top: 15px;
+        }
       }
     }
   }
