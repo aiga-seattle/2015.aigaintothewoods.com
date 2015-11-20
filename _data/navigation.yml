@@ -1,10 +1,14 @@
 - text: Overview
   url: /overview.html
+- text: Programming
+  url: /programming.html
 # - text: Speakers
 #   url: /speakers.html
-# - text: Workshops
-#   url: /workshops.html
+- text: Workshops
+  url: /workshops.html
 - text: Schedule
   url: /schedule.html
 - text: Register
-  url: https://www.eventbrite.com/e/into-the-woods-conference-2016-tickets-18926152632
+  url: /register.html
+# - text: Register
+#   url: https://www.eventbrite.com/e/into-the-woods-conference-2016-tickets-18926152632
