@@ -6128,12 +6128,15 @@ h3, h4 {
 
   .navbar-nav > li {
     margin-top: 20px; } }
-@media (max-width: 768px) {
+@media (max-width: 380px) {
+  .nav-padding {
+    margin-top: 34px; }
+
   .visible-xs {
     display: inline-block !important; }
 
   .hidden-xs {
-    display: none; } }
+    display: none !important; } }
 footer {
   text-align: center; }
   footer a, footer a:hover, footer a:visited {
