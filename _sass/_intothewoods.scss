@@ -53,7 +53,7 @@ h3, h4 {
 }
 
 .page-workshops, .page-schedule, .page-register,
-.page-programming, .page-overview {
+.page-speakers, .page-overview {
   .content {
     @include make-md-column(6);
     @include make-md-column-offset(3);
@@ -76,6 +76,15 @@ h3, h4 {
   @include make-row();
 }
 
+
+// Behaviors
+.anchor:before {
+  display: block;
+  content: " ";
+  margin-top: -119px;
+  height: 119px;
+  visibility: hidden;
+}
 
 // Sections
 .page-schedule {
@@ -208,7 +217,7 @@ h3, h4 {
   }
 }
 
-.page-programming {
+.page-speakers {
   .wrapper-programming {
     @include make-background-cover();
     background-image: url(/images/backgrounds/mountains.jpg);

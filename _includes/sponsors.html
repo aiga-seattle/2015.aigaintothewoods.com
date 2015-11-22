@@ -3,12 +3,22 @@
     <div class="content">
       <h2>Sponsors</h2>
       <ul class="list-inline sponsors-roll">
-        <li class="sponsor"><img src='/images/logos/hemlock.svg' alt='Hemlock'/></li>
-        <li class="sponsor"><img src='/images/logos/neenah-paper.svg' alt='Neenah Paper'/></li>
-        <li class="sponsor"><img src='/images/logos/sappi.svg' alt='Sappi'/></li>
-        <li class="sponsor hidden-xs"><img src='/images/logos/hemlock.svg' alt='Hemlock'/></li>
-        <li class="sponsor hidden-xs"><img src='/images/logos/neenah-paper.svg' alt='Neenah Paper'/></li>
-        <li class="sponsor hidden-xs"><img src='/images/logos/sappi.svg' alt='Sappi'/></li>
+
+        {% for sponsor in site.data.sponsors %}
+          <li class="sponsor">
+            <a href="{{ sponsor.website }}" target="_blank">
+              <img src='{{ sponsor.logo_url }}' alt='{{ sponsor.alt_text }}'/>
+            </a>
+          </li>
+        {% endfor %}
+
+        {% for sponsor in site.data.sponsors %}
+          <li class="sponsor hidden-xs">
+            <a href="{{ sponsor.website }}" target="_blank">
+              <img src='{{ sponsor.logo_url }}' alt='{{ sponsor.alt_text }}'/>
+            </a>
+          </li>
+        {% endfor %}
       </ul>
     </div>
   </div>

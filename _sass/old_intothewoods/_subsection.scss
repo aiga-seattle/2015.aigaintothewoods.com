@@ -4,36 +4,37 @@
   background-repeat: repeat-y;
   background-size: cover;
 
-  h2 {
+  a.stripe {
     text-transform: uppercase;
     color: #fff;
     background-color: #000;
-    padding: 10px;
+    padding: 10px 50px;
     display: inline-block;
     letter-spacing: 6px;
     margin: 50px auto;
+    font-size: 50px;
   }
 
   @media (max-width: 768px) {
-    h2 {
+    a.stripe {
       font-size: 19px;
       margin: 15px auto;
     }
   }
 }
 
-.workshops {
+.stripe-workshops {
   background-image: url('/images/backgrounds/stripes-moon.jpg');
 }
 
-.accomodations {
+.stripe-accomodations {
   background-image: url('/images/backgrounds/stripes-building.jpg');
 }
 
-.speakers {
+.stripe-speakers {
   background-image: url('/images/backgrounds/stripes-reflections.jpg');
 }
 
-.networking {
+.stripe-networking {
   background-image: url('/images/backgrounds/stripes-logs.jpg');
 }

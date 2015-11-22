@@ -5870,7 +5870,7 @@ h3, h4 {
   padding-top: 50px; }
 
 .page-workshops .content, .page-schedule .content, .page-register .content,
-.page-programming .content, .page-overview .content {
+.page-speakers .content, .page-overview .content {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -5883,19 +5883,19 @@ h3, h4 {
   padding-right: 15px; }
   @media (min-width: 992px) {
     .page-workshops .content, .page-schedule .content, .page-register .content,
-    .page-programming .content, .page-overview .content {
+    .page-speakers .content, .page-overview .content {
       float: left;
       width: 50%; } }
   @media (min-width: 992px) {
     .page-workshops .content, .page-schedule .content, .page-register .content,
-    .page-programming .content, .page-overview .content {
+    .page-speakers .content, .page-overview .content {
       margin-left: 25%; } }
   .page-workshops .content > section, .page-schedule .content > section, .page-register .content > section,
-  .page-programming .content > section, .page-overview .content > section {
+  .page-speakers .content > section, .page-overview .content > section {
     padding-top: 50px;
     padding-bottom: 40px; }
   .page-workshops .content a, .page-schedule .content a, .page-register .content a,
-  .page-programming .content a, .page-overview .content a {
+  .page-speakers .content a, .page-overview .content a {
     color: #000;
     text-decoration: underline; }
 
@@ -5907,6 +5907,13 @@ h3, h4 {
     display: table; }
   .wrapper:after {
     clear: both; }
+
+.anchor:before {
+  display: block;
+  content: " ";
+  margin-top: -119px;
+  height: 119px;
+  visibility: hidden; }
 
 .page-schedule .wrapper-conference-schedule {
   text-align: center;
@@ -5995,7 +6002,7 @@ h3, h4 {
         width: 100%;
         margin: 25px auto; } }
 
-.page-programming .wrapper-programming {
+.page-speakers .wrapper-programming {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #000;
@@ -6003,23 +6010,23 @@ h3, h4 {
   background-color: #232122;
   background-attachment: fixed;
   color: #fff; }
-  .page-programming .wrapper-programming h1 {
+  .page-speakers .wrapper-programming h1 {
     color: #63E9B9; }
-  .page-programming .wrapper-programming a {
+  .page-speakers .wrapper-programming a {
     color: #fff;
     text-decoration: underline; }
-.page-programming .wrapper-speakers {
+.page-speakers .wrapper-speakers {
   background-color: #63E9B9; }
-  .page-programming .wrapper-speakers h2 {
+  .page-speakers .wrapper-speakers h2 {
     color: #F7F5AA; }
-  .page-programming .wrapper-speakers img {
+  .page-speakers .wrapper-speakers img {
     vertical-align: middle;
     float: right;
     padding-left: 20px; }
-  .page-programming .wrapper-speakers .content {
+  .page-speakers .wrapper-speakers .content {
     padding-top: 50px;
     padding-bottom: 40px; }
-  .page-programming .wrapper-speakers section {
+  .page-speakers .wrapper-speakers section {
     padding: 0; }
 
 .page-overview .wrapper-overview {
@@ -6224,29 +6231,30 @@ footer {
   background-position: center;
   background-repeat: repeat-y;
   background-size: cover; }
-  .subsection h2 {
+  .subsection a.stripe {
     text-transform: uppercase;
     color: #fff;
     background-color: #000;
-    padding: 10px;
+    padding: 10px 50px;
     display: inline-block;
     letter-spacing: 6px;
-    margin: 50px auto; }
+    margin: 50px auto;
+    font-size: 50px; }
   @media (max-width: 768px) {
-    .subsection h2 {
+    .subsection a.stripe {
       font-size: 19px;
       margin: 15px auto; } }
 
-.workshops {
+.stripe-workshops {
   background-image: url("/images/backgrounds/stripes-moon.jpg"); }
 
-.accomodations {
+.stripe-accomodations {
   background-image: url("/images/backgrounds/stripes-building.jpg"); }
 
-.speakers {
+.stripe-speakers {
   background-image: url("/images/backgrounds/stripes-reflections.jpg"); }
 
-.networking {
+.stripe-networking {
   background-image: url("/images/backgrounds/stripes-logs.jpg"); }
 
 .jumbotron {

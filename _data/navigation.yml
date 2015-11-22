@@ -1,9 +1,7 @@
 - text: Overview
   url: /overview.html
-- text: Programming
-  url: /programming.html
-# - text: Speakers
-#   url: /speakers.html
+- text: Speakers
+  url: /speakers.html
 - text: Workshops
   url: /workshops.html
 - text: Schedule
