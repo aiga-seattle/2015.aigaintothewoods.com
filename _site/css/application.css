@@ -6002,32 +6002,73 @@ h3, h4 {
         width: 100%;
         margin: 25px auto; } }
 
-.page-speakers .wrapper-programming {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #000;
-  background-image: url(/images/backgrounds/mountains.jpg);
-  background-color: #232122;
-  background-attachment: fixed;
-  color: #fff; }
-  .page-speakers .wrapper-programming h1 {
-    color: #63E9B9; }
-  .page-speakers .wrapper-programming a {
-    color: #fff;
-    text-decoration: underline; }
-.page-speakers .wrapper-speakers {
-  background-color: #63E9B9; }
-  .page-speakers .wrapper-speakers h2 {
-    color: #F7F5AA; }
-  .page-speakers .wrapper-speakers img {
-    vertical-align: middle;
-    float: right;
-    padding-left: 20px; }
-  .page-speakers .wrapper-speakers .content {
-    padding-top: 50px;
-    padding-bottom: 40px; }
-  .page-speakers .wrapper-speakers section {
-    padding: 0; }
+.page-speakers .speaker-img {
+  padding-top: 27px; }
+  .page-speakers .speaker-img img {
+    width: 100%; }
+.page-speakers .wrapper-speaker-fili {
+  text-align: center;
+  padding-top: 47px; }
+  .page-speakers .wrapper-speaker-fili .speaker-title {
+    margin-bottom: 50px; }
+    .page-speakers .wrapper-speaker-fili .speaker-title h1 {
+      font-size: 50px; }
+  .page-speakers .wrapper-speaker-fili .speaker-img {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0; }
+    @media (min-width: 992px) {
+      .page-speakers .wrapper-speaker-fili .speaker-img {
+        float: left;
+        width: 100%; } }
+    @media (min-width: 1200px) {
+      .page-speakers .wrapper-speaker-fili .speaker-img {
+        float: left;
+        width: 58.33333%; } }
+  .page-speakers .wrapper-speaker-fili .speaker-text {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 50px; }
+    @media (min-width: 992px) {
+      .page-speakers .wrapper-speaker-fili .speaker-text {
+        float: left;
+        width: 100%; } }
+    @media (min-width: 1200px) {
+      .page-speakers .wrapper-speaker-fili .speaker-text {
+        float: left;
+        width: 41.66667%; } }
+.page-speakers .wrapper-coming-soon {
+  background: repeating-linear-gradient(-45deg, #323ac5, #323ac5 44px, #252ab2 44px, #252ab2 88px);
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center; }
+.page-speakers .wrapper-speaker-nav {
+  margin-top: 27px;
+  background-color: #98e8ba;
+  color: #000;
+  padding: 10px;
+  position: fixed;
+  z-index: 9;
+  width: 100%; }
+  .page-speakers .wrapper-speaker-nav .active span {
+    border-bottom: 3px solid #000; }
+  .page-speakers .wrapper-speaker-nav .speaker-nav li {
+    padding-left: 25px;
+    padding-right: 25px; }
 
 .page-overview .wrapper-overview {
   text-align: center;
@@ -6113,7 +6154,7 @@ h3, h4 {
     border-bottom: 3px solid #fff; }
 
 .navbar-nav > li {
-  padding: 15px; }
+  padding: 15px 25px; }
 
 .nav-padding {
   margin-top: 50px;
