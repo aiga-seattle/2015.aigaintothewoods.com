@@ -233,69 +233,114 @@ h3, h4 {
 }
 
 .page-speakers {
+  .wrapper-speaker-intro {
+    background-image: url('/images/backgrounds/plain-pink-mountains.jpg');
+    background-position: center center;
+    background-size: 100% 100%;
+    color: #2B38C9;
+    font-size: 26px;
+    height: 385px;
+  }
+
+  .wrapper-stripes {
+    background-image: url("/images/backgrounds/stripes-moon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50px;
+  }
 
   .speaker-img {
-    padding-top: 27px;
+    @include make-md-column(4);
+    @include make-md-column-offset(1);
 
     img {
       width: 100%;
     }
   }
 
-  .wrapper-speaker-fili {
-    text-align: center;
-    padding-top: 47px;
+  .speaker-text {
+    @include make-md-column(6);
+  }
 
-    .speaker-title {
-      margin-bottom: 50px;
-      h1 { font-size: 50px; }
+  .container-speakers {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .wrapper-speaker-fili {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 38px;
+    margin-top: 120px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: $itw-neon-blue;
+  }
+
+  @media (max-width: $screen-md-min){
+    .wrapper-speaker-intro {
+      background-image: url('/images/backgrounds/pink-mountains-stripe.jpg');
+      height: 340px;
+      font-size: 20px;
+    }
+
+    .wrapper-stripes {
+      background-image: none;
+    }
+
+    .container-speakers {
+      padding-top:    15px;
+      padding-bottom: 15px;
+    }
+
+    .wrapper-speaker-fili {
+      margin-top:    15px;
+      margin-bottom: 15px;
     }
 
     .speaker-img {
-      @include make-md-column(12);
-      @include make-lg-column(7);
-
-      padding-left: 0;
-      padding-right: 0;
+      margin-bottom: 30px;
     }
 
-    .speaker-text {
-      @include make-md-column(12);
-      @include make-lg-column(5);
-      padding: 50px;
-    }
-  }
-
-  .wrapper-coming-soon {
-    @include make-background-blue-stripe();
-    color: #fff;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  .wrapper-speaker-nav {
-    margin-top: 27px;
-    background-color: $itw-neon-blue;
-    color: #000;
-    padding: 10px;
-
-    position: fixed;
-    z-index: 9;
-    width: 100%;
-
-    .active span{
-      border-bottom: 3px solid #000;
+    .speaker-bio {
+      font-size: 17px;
     }
 
-    .speaker-nav {
-      li {
-        padding-left:  25px;
-        padding-right: 25px;
-      }
+    h1 {
+      margin-top: 60px;
+    }
+
+    h2 {
+      font-size: 28px;
     }
   }
 }
+
+.cover-hero {
+  @include make-md-column(6);
+  @include make-md-column-offset(3);
+
+  text-align: center;
+}
+
+@media (max-width: $screen-md-min){
+  .cover-hero {
+    padding-left:  35px;
+    padding-right: 35px;
+  }
+}
+
 
 .page-overview {
   .wrapper-overview {
@@ -445,7 +490,7 @@ h3, h4 {
 
 @media (min-width: 768px) {
   .nav-padding {
-    margin-top: 64px;
+    margin-top: 91px;
   }
 
   .navbar-header {
@@ -466,7 +511,7 @@ h3, h4 {
 
 @media (max-width: 380px) {
   .nav-padding {
-    margin-top: 34px;
+    margin-top: 50px;
   }
 
   .visible-xs {
