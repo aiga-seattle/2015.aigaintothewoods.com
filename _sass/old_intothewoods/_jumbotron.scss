@@ -19,7 +19,7 @@
     display: block;
   }
 
-  @media (max-width: 340px) {
+  @media (min-width: 340px) {
     .visible-mobile {
       display: block;
     }

@@ -6334,7 +6334,7 @@ footer {
     display: none; }
   .jumbotron .hide-mobile {
     display: block; }
-  @media (max-width: 340px) {
+  @media (min-width: 340px) {
     .jumbotron .visible-mobile {
       display: block; }
     .jumbotron .hide-mobile {
