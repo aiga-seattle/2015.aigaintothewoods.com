@@ -239,7 +239,7 @@ h3, h4 {
     background-size: 100% 100%;
     color: #2B38C9;
     font-size: 26px;
-    height: 385px;
+    min-height: 385px;
   }
 
   .wrapper-stripes {
@@ -291,7 +291,7 @@ h3, h4 {
   @media (max-width: $screen-md-min){
     .wrapper-speaker-intro {
       background-image: url('/images/backgrounds/pink-mountains-stripe.jpg');
-      height: 340px;
+      min-height: 340px;
       font-size: 20px;
     }
 

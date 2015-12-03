@@ -6008,7 +6008,7 @@ h3, h4 {
   background-size: 100% 100%;
   color: #2B38C9;
   font-size: 26px;
-  height: 385px; }
+  min-height: 385px; }
 .page-speakers .wrapper-stripes {
   background-image: url("/images/backgrounds/stripes-moon.png");
   background-repeat: no-repeat;
@@ -6058,7 +6058,7 @@ h3, h4 {
 @media (max-width: 992px) {
   .page-speakers .wrapper-speaker-intro {
     background-image: url("/images/backgrounds/pink-mountains-stripe.jpg");
-    height: 340px;
+    min-height: 340px;
     font-size: 20px; }
   .page-speakers .wrapper-stripes {
     background-image: none; }
