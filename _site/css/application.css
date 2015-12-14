@@ -6076,6 +6076,39 @@ h3, h4 {
     margin-top: 60px; }
   .page-speakers h2 {
     font-size: 28px; } }
+.page-speakers .wrapper-speakers-line-up-intro {
+  padding-top: 40px; }
+.page-speakers .wrapper-speakers-line-up {
+  padding-bottom: 40px; }
+.page-speakers .wrapper-speakers-line-up-intro,
+.page-speakers .wrapper-speakers-line-up {
+  background-color: #63E9B9;
+  color: #000;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .page-speakers .wrapper-speakers-line-up-intro h2,
+  .page-speakers .wrapper-speakers-line-up h2 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: inherit;
+    font-size: 38px; }
+  .page-speakers .wrapper-speakers-line-up-intro p,
+  .page-speakers .wrapper-speakers-line-up p {
+    font-size: 26px; }
+  .page-speakers .wrapper-speakers-line-up-intro .speaker-line-up,
+  .page-speakers .wrapper-speakers-line-up .speaker-line-up {
+    float: left;
+    width: 20%;
+    padding: 15px; }
+    .page-speakers .wrapper-speakers-line-up-intro .speaker-line-up img,
+    .page-speakers .wrapper-speakers-line-up .speaker-line-up img {
+      width: 100%; }
+  @media (max-width: 768px) {
+    .page-speakers .wrapper-speakers-line-up-intro .speaker-line-up,
+    .page-speakers .wrapper-speakers-line-up .speaker-line-up {
+      width: 100%;
+      float: none; } }
 
 .cover-hero {
   position: relative;
