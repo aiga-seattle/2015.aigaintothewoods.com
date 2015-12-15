@@ -6044,6 +6044,20 @@ h3, h4 {
 .page-speakers .wrapper-speaker-fili {
   margin-top: 40px;
   margin-bottom: 40px; }
+.page-speakers .speaker-works-panel {
+  max-width: 560px; }
+.page-speakers .works-panel {
+  padding-top: 20px; }
+.page-speakers .works {
+  float: left; }
+.page-speakers .works-rectangle {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #fff; }
+.page-speakers .works-square {
+  width: 50%; }
+  .page-speakers .works-square:last-child {
+    padding-left: 20px; }
 .page-speakers h1 {
   font-size: 38px;
   margin-top: 120px;
