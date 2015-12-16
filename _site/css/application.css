@@ -6090,6 +6090,15 @@ h3, h4 {
     margin-top: 60px; }
   .page-speakers h2 {
     font-size: 28px; } }
+@media (max-width: 768px) {
+  .page-speakers .works {
+    clear: both;
+    width: 100% !important;
+    margin-bottom: 20px; }
+    .page-speakers .works img {
+      width: 100%; }
+  .page-speakers .works-square:last-child {
+    padding-left: 0; } }
 .page-speakers .wrapper-speakers-line-up-intro {
   padding-top: 40px; }
 .page-speakers .wrapper-speakers-line-up {
