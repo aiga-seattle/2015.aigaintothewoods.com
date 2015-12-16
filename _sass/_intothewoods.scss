@@ -293,24 +293,28 @@ h3, h4 {
 
   .works-panel {
     padding-top: 20px;
+    margin-left: -15px;
+    margin-right: -15px;
   }
 
   .works {
     float: left;
+
+    padding-left:  15px;
+    padding-right: 15px;
+
+    img {
+      width: 100%;
+    }
   }
 
   .works-rectangle {
     width: 100%;
     margin-bottom: 20px;
-    background-color: #fff;
   }
 
   .works-square {
     width: 50%;
-
-    &:last-child {
-      padding-left: 20px;
-    }
   }
 
   h1 {
