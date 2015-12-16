@@ -1,9 +1,10 @@
 require "rack/jekyll"
+require "rack/nocache"
 
 # use Rack::Auth::Basic, "AIGA Seattle" do |username, password|
 #   username == 'aiga'  && 'betweenthelines' == password
 # end
 
-# use Rack::Cache, allow_reload: false
+use Rack::Nocache
 
 run Rack::Jekyll.new
