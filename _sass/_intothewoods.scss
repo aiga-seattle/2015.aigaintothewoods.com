@@ -275,6 +275,20 @@ h3, h4 {
 
   .speaker-works-panel {
     max-width: 560px;
+
+    .show-works {
+      &:focus {
+        text-decoration: none;
+      }
+
+      &.collapsed {
+        .caret {
+          border-bottom: 4px solid transparent;
+          border-top: 4px solid transparent;
+          border-left: 4px solid;
+        }
+      }
+    }
   }
 
   .works-panel {

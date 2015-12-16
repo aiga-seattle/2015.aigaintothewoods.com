@@ -6046,6 +6046,12 @@ h3, h4 {
   margin-bottom: 40px; }
 .page-speakers .speaker-works-panel {
   max-width: 560px; }
+  .page-speakers .speaker-works-panel .show-works:focus {
+    text-decoration: none; }
+  .page-speakers .speaker-works-panel .show-works.collapsed .caret {
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-left: 4px solid; }
 .page-speakers .works-panel {
   padding-top: 20px; }
 .page-speakers .works {
