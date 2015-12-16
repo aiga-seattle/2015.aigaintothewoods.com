@@ -4,4 +4,6 @@ require "rack/jekyll"
 #   username == 'aiga'  && 'betweenthelines' == password
 # end
 
+# use Rack::Cache, allow_reload: false
+
 run Rack::Jekyll.new
