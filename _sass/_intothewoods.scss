@@ -592,8 +592,8 @@ h3, h4 {
   width: 100%;
   > li {
     padding: 15px 25px;
-    width: percentage(1/5);
-    text-align: center;
+    width: 100%;
+    text-align: left;
   }
 }
 
@@ -623,6 +623,8 @@ h3, h4 {
 
   .navbar-nav > li {
     margin-top: 20px;
+    width: percentage(1/5);
+    text-align: center;
   }
 
 }

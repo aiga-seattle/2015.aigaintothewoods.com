@@ -4317,6 +4317,18 @@ a.badge:hover, a.badge:focus {
       .jumbotron .h1 {
         font-size: 63px; } }
 
+.hidden-xxs {
+  display: inherit; }
+
+.visible-xxs-block {
+  display: none; }
+
+@media (max-width: 450px) {
+  .hidden-xxs {
+    display: none; }
+
+  .visible-xxs-block {
+    display: block; } }
 .thumbnail {
   display: block;
   padding: 4px;
@@ -6255,8 +6267,8 @@ h3, h4 {
   width: 100%; }
   .navbar-nav > li {
     padding: 15px 25px;
-    width: 20%;
-    text-align: center; }
+    width: 100%;
+    text-align: left; }
 
 .nav-padding {
   margin-top: 50px;
@@ -6277,7 +6289,9 @@ h3, h4 {
     height: 50px; }
 
   .navbar-nav > li {
-    margin-top: 20px; } }
+    margin-top: 20px;
+    width: 20%;
+    text-align: center; } }
 @media (max-width: 380px) {
   .nav-padding {
     margin-top: 50px; }
@@ -6381,11 +6395,12 @@ footer {
     padding: 10px 20px;
     display: inline-block;
     letter-spacing: 6px;
-    margin: 50px auto; }
+    margin: 50px auto;
+    font-size: 1.3em; }
   @media (max-width: 768px) {
     .subsection a.stripe {
-      font-size: 12px;
-      margin: 15px auto; } }
+      margin: 15px auto;
+      padding: 10px 20px; } }
 
 .stripe-workshops {
   background-image: url("/images/backgrounds/stripes-moon.jpg"); }

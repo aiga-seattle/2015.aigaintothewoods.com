@@ -50,3 +50,23 @@
     }
   }
 }
+
+.hidden-xxs {
+  display: inherit;
+}
+
+
+.visible-xxs-block {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .hidden-xxs {
+    display: none;
+  }
+
+
+  .visible-xxs-block {
+    display: block;
+  }
+}

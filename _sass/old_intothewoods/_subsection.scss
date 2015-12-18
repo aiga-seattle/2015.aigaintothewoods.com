@@ -12,12 +12,13 @@
     display: inline-block;
     letter-spacing: 6px;
     margin: 50px auto;
+    font-size: 1.3em;
   }
 
   @media (max-width: 768px) {
     a.stripe {
-      font-size: 12px;
       margin: 15px auto;
+      padding: 10px 20px;
     }
   }
 }
