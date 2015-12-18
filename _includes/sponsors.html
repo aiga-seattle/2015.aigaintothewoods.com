@@ -3,11 +3,10 @@
     <div class="content">
       <h2>Sponsors</h2>
       <ul class="list-inline sponsors-roll">
-
         {% for sponsor in site.data.sponsors %}
           <li class="sponsor">
             <a href="{{ sponsor.website }}" target="_blank">
-              <img src='{{ sponsor.logo_url }}' alt='{{ sponsor.alt_text }}'/>
+              <img src='{{ sponsor.logo_url }}' class="sponsor-logo logo-{{sponsor.alt_text || slugify}}" alt='{{ sponsor.alt_text }}'"/>
             </a>
           </li>
         {% endfor %}

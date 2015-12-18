@@ -210,7 +210,14 @@ h3, h4 {
 
     .sponsor {
       color: #fff;
-      width: 15%
+      width: percentage(1/2);
+      float: left;
+
+      img {
+        width: 100%;
+        max-height: 70px;
+        min-width: 100px;
+      }
     }
 
     @media (max-width: 768px) {
@@ -225,7 +232,7 @@ h3, h4 {
       .sponsor {
         display: inline-block;
         width: 100%;
-        margin: 25px auto;
+        margin: 30px auto;
       }
     }
 
@@ -543,7 +550,6 @@ h3, h4 {
   }
 }
 
-// Old Styles
 #navbar {
   padding-left: 55px;
 }

@@ -5991,7 +5991,12 @@ h3, h4 {
       margin-bottom: 50px; }
     .sponsors .content .sponsor {
       color: #fff;
-      width: 15%; }
+      width: 50%;
+      float: left; }
+      .sponsors .content .sponsor img {
+        width: 100%;
+        max-height: 70px;
+        min-width: 100px; }
     @media (max-width: 768px) {
       .sponsors .content h2 {
         font-size: 19px; }
@@ -6000,7 +6005,7 @@ h3, h4 {
       .sponsors .content .sponsor {
         display: inline-block;
         width: 100%;
-        margin: 25px auto; } }
+        margin: 30px auto; } }
 
 .page-speakers .wrapper-speaker-intro {
   background-image: url("/images/backgrounds/plain-pink-mountains.jpg");
