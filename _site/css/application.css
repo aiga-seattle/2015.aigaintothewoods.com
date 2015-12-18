@@ -6216,6 +6216,9 @@ h3, h4 {
     font-size: 16px;
     letter-spacing: 2px; }
 
+#navbar {
+  padding-left: 55px; }
+
 .navbar {
   font-size: 18px;
   text-transform: uppercase;
@@ -6243,8 +6246,12 @@ h3, h4 {
   .navbar-inverse .navbar-nav > li > a.active {
     border-bottom: 3px solid #fff; }
 
-.navbar-nav > li {
-  padding: 15px 25px; }
+.navbar-nav {
+  width: 100%; }
+  .navbar-nav > li {
+    padding: 15px 25px;
+    width: 20%;
+    text-align: center; }
 
 .nav-padding {
   margin-top: 50px;

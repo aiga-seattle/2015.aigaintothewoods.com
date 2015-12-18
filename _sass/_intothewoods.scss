@@ -544,6 +544,9 @@ h3, h4 {
 }
 
 // Old Styles
+#navbar {
+  padding-left: 55px;
+}
 
 .navbar {
   font-size: 18px;
@@ -579,8 +582,13 @@ h3, h4 {
   }
 }
 
-.navbar-nav > li {
-  padding: 15px 25px;
+.navbar-nav {
+  width: 100%;
+  > li {
+    padding: 15px 25px;
+    width: percentage(1/5);
+    text-align: center;
+  }
 }
 
 .nav-padding {
