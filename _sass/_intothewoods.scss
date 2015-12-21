@@ -247,6 +247,7 @@ h3, h4 {
     color: #2B38C9;
     font-size: 26px;
     min-height: 385px;
+    padding-bottom: 150px;
   }
 
   .wrapper-stripes {
@@ -322,6 +323,10 @@ h3, h4 {
 
   .works-square {
     width: 50%;
+  }
+
+  .speaker-bio, .speaker-title {
+    max-width: 560px;
   }
 
   h1 {
