@@ -6025,7 +6025,8 @@ h3, h4 {
   background-size: 100% 100%;
   color: #2B38C9;
   font-size: 26px;
-  min-height: 385px; }
+  min-height: 385px;
+  padding-bottom: 150px; }
 .page-speakers .wrapper-stripes {
   background-image: url("/images/backgrounds/stripes-moon.png");
   background-repeat: no-repeat;
@@ -6084,6 +6085,8 @@ h3, h4 {
   margin-bottom: 20px; }
 .page-speakers .works-square {
   width: 50%; }
+.page-speakers .speaker-bio, .page-speakers .speaker-title {
+  max-width: 560px; }
 .page-speakers h1 {
   font-size: 38px;
   margin-top: 120px;
@@ -6363,6 +6366,12 @@ footer {
   background-image: url("/images/square-byrne.jpg"); }
 .speakers-grid .square-circles {
   background-image: url("/images/square-circles.jpg"); }
+
+.background-trees {
+  background-image: url("/images/cascade-trees.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right; }
 
 .container-fluid.no-gutters {
   padding-right: 0;
