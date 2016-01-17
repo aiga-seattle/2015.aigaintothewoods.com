@@ -13,3 +13,7 @@ github_username:  aigaseattle
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+  - workshops

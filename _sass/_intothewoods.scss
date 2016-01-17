@@ -185,12 +185,54 @@ h3, h4 {
     height: 50px;
   }
 
+  .wrapper-workshops {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #1a1718;
+    color: #fff;
+    text-align: left;
+  }
+
+  .workshop-img {
+    @include make-md-column(4);
+    @include make-md-column-offset(1);
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .workshop-text {
+    @include make-md-column(6);
+  }
+
   h1 {
     font-size: 38px;
     border-bottom: 1px solid #fff;
     padding-bottom: 30px;
     margin-bottom: 30px;
     margin-top: 80px;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  hr {
+    margin-left: 8.33333%;
+    border-top: 1px solid rgb( 43, 56, 201);
+    width: percentage(10/12);
+    margin-bottom: 50px;
+  }
+
+  hr:last-child {
+    display: none;
+  }
+
+  p {
+    font-size: 19px;
   }
 
   @media (max-width: $screen-md-min){
@@ -205,27 +247,6 @@ h3, h4 {
       margin-top: 35px;
     }
 
-  }
-}
-
-.wrapper-workshops {
-  text-align: center;
-  color: #fff;
-
-  background-color: rgb(26, 23, 24);
-
-  h1 {
-    color: $itw-green;
-
-    small {
-      color: $itw-green;
-      font-size: 17px;
-      font-family: 'CenturyGothicStd-BoldItalic', Helvetica, Arial, sans-serif;
-    }
-  }
-
-  section {
-    border-bottom-color: rgb(43, 56, 201);
   }
 }
 
