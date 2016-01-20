@@ -1,7 +1,9 @@
 <section class="{{ include.class }} row subsection">
   <div class="container-fluid">
     <div class="col-xs-12">
-      <a href="{{ include.href }}" class="stripe">{{ include.text }}</a>
+      <a href="{{ include.href }}" class="stripe">
+        <span class="stripe-seq">{{ include.seq }}</span> <span class="stripe-text">{{ include.text }}</span>
+      </a>
     </div>
   </div>
 </section>

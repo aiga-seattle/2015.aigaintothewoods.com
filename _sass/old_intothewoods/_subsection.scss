@@ -23,6 +23,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .stripe-accomodations .stripe-text{
+    display: block;
+  }
+}
+
 .stripe-workshops {
   background-image: url('/images/backgrounds/stripes-moon.jpg');
 }
