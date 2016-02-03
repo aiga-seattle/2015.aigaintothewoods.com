@@ -18,100 +18,58 @@ layout: single_column
   </div>
 
   <div class="wrapper wrapper-speakers-line-up hidden-sm hidden-xs">
-    <div class="speaker-line-up">
-      <a href="#fili"><img src="/images/speakers/louise-fili-square-205x205.jpg" alt="Louise Fili"></a>
-    </div>
-    <div class="speaker-line-up">
-      <a href="#white"><img src="/images/speakers/james-white-square-205x205.jpg" alt="James White"></a>
-    </div>
-    <div class="speaker-line-up">
-      <img src="/images/speakers/blank-speaker-205x205.png" alt="Upcoming Speaker">
-    </div>
-    <div class="speaker-line-up">
-      <img src="/images/speakers/blank-speaker-205x205.png" alt="Upcoming Speaker">
-    </div>
-    <div class="speaker-line-up">
-      <img src="/images/speakers/blank-speaker-205x205.png" alt="Upcoming Speaker">
-    </div>
+    {% for speaker in site.speakers %}
+      <div class="speaker-line-up">
+        <a href="#{{ speaker.slug }}"><img src="{{ speaker.placeholder_url }}" alt="{{ speaker.name }}"></a>
+      </div>
+    {% endfor %}
+
+    {% for count in (site.speakers.size..4) %}
+      <div class="speaker-line-up">
+        <img src="/images/speakers/blank-speaker-205x205.png" alt="Upcoming Speaker">
+      </div>
+    {% endfor %}
   </div>
 
   <div class="container-speakers">
-    <div class="wrapper wrapper-speaker-fili">
-      <a class='anchor' name="fili"></a>
-      <div class="speaker-img">
-        <img src="/images/speakers/louise-fili-square-350x350.jpg" alt="A picture of Louise Fili">
-      </div>
-
-      <div class="speaker-text">
-        <div class="speaker-title">
-          <h2>Louise Fili</h2>
+    {% for speaker in site.speakers %}
+      <div class="wrapper wrapper-speaker-{{ speaker.slug }}">
+        <a class='anchor' name="{{ speaker.slug }}"></a>
+        <div class="speaker-img">
+          <img src="{{ speaker.image_url }}" alt="A picture of {{ speaker.name }}">
         </div>
 
-        <div class="speaker-bio">
-          <p>
-            Louise Fili is director of Louise Fili Ltd, a New York City design firm specializing in brand development for restaurants and food packaging. Fili has co-authored over twenty books on design and typography with her husband, Steven Heller, and she has also written and designed books on Italian design and culture. She is a member of the Art Directors Hall of Fame and is a recipient of the Medal for Lifetime Achievement from both the AIGA and the Type Directors Club. A best-selling monograph of her work, <i>Elegantissima</i>, was published in 2012.
-          </p>
-          <p>Visit her site at <a href="http://www.louisefili.com/" target="_blank">louisefili.com</a>.</p>
-        </div>
+        <div class="speaker-text">
+          <div class="speaker-title">
+            <h2>{{ speaker.name }}</h2>
+          </div>
 
-        <div class="speaker-works-panel">
-          <a class="show-works collapsed" role="button" data-toggle="collapse" href="#collapseFili" aria-expanded="false" aria-controls="collapseExample">
-            Show More <span class="caret"></span>
-          </a>
+          <div class="speaker-bio">
+            {{ speaker.content }}
+            <p>Visit their website at <a href="{{ speaker.website }}" target="_blank">{{ speaker.website }}</a>.</p>
+          </div>
 
-          <div class="collapse works-panel" id="collapseFili">
-            <div class="works works-rectangle">
-              <img src="/images/speakers/louise-fili/logos.png" alt="Logos">
-            </div>
-            <div class="works works-square">
-              <img src="/images/speakers/louise-fili/good-housekeeping-logo.png" alt="Good Housekeeping Logo">
-            </div>
-            <div class="works works-square">
-              <img src="/images/speakers/louise-fili/pace-logo.png" alt="Pace Logo">
+          <div class="speaker-works-panel">
+            <a class="show-works collapsed" role="button" data-toggle="collapse" href="#collapse{{ speaker.slug | capitalize}}" aria-expanded="false" aria-controls="collapseExample">
+              Show More <span class="caret"></span>
+            </a>
+
+            <div class="collapse works-panel" id="collapse{{ speaker.slug | capitalize}}">
+              <div class="works works-rectangle">
+                <img src="{{ speaker.example_hero.url }}" alt="{{ speaker.example_hero.alt }}">
+              </div>
+
+              {% for example in speaker.examples %}
+                <div class="works works-square">
+                  <img src="{{ example.url }}" alt="{{ example.alt }}">
+                </div>
+              {% endfor %}
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <hr/>
-
-    <div class="wrapper wrapper-james-white">
-      <a class='anchor' name="white"></a>
-      <div class="speaker-img">
-        <img src="/images/speakers/james-white.jpg" alt="A picture of James White">
-      </div>
-
-      <div class="speaker-text">
-        <div class="speaker-title">
-          <h2>James White</h2>
-        </div>
-
-        <div class="speaker-bio">
-          <p>
-            James White from the Signalnoise Studio has based his career on doing things outside of the ordinary, turning his back on boardrooms and creative briefs in order to chase his design dreams with vengeance and rock n’ roll. He will be telling his story while discussing personal projects built from love and ambition in his small home office in Dartmouth, Nova Scotia. These led to him working with respected people all over the world, from his favorite metal band to film juggernaut Kevin Smith. James will talk about chasing your creative path, building your personal body of work, the value of supporting friends, and never forgetting the artist inside.
-          </p>
-          <p>Visit his site at <a href="http://signalnoise.com/" target="_blank">signalnoise.com</a>.</p>
-        </div>
-
-        <div class="speaker-works-panel">
-          <a class="show-works collapsed" role="button" data-toggle="collapse" href="#collapseWhite" aria-expanded="false" aria-controls="collapseExample">
-            Show More <span class="caret"></span>
-          </a>
-
-          <div class="collapse works-panel" id="collapseWhite">
-            <div class="works works-rectangle">
-              <img src="/images/speakers/james-white/laser-horse.jpg" alt="20 Years of Photoshop">
-            </div>
-            <div class="works works-square">
-              <img src="/images/speakers/james-white/stay-rad.jpg" alt="Overdrive Series 'Nitro'">
-            </div>
-            <div class="works works-square">
-              <img src="/images/speakers/james-white/nasa-mission-patch.jpg" alt="Unofficial NASA mission patches">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <hr/>
+    {% endfor %}
   </div>
 </div>
