@@ -5990,7 +5990,8 @@ h3, h4 {
   position: relative;
   min-height: 1px;
   padding-left: 17px;
-  padding-right: 17px; }
+  padding-right: 17px;
+  text-align: right; }
   @media (min-width: 992px) {
     .page-workshops .workshop-img {
       float: left;
@@ -5999,7 +6000,8 @@ h3, h4 {
     .page-workshops .workshop-img {
       margin-left: 8.33333%; } }
   .page-workshops .workshop-img img {
-    width: 100%; }
+    width: 100%;
+    max-width: 205px; }
 .page-workshops .workshop-text {
   position: relative;
   min-height: 1px;

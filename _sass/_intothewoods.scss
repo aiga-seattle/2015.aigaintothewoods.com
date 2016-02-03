@@ -197,8 +197,11 @@ h3, h4 {
     @include make-md-column(4);
     @include make-md-column-offset(1);
 
+    text-align: right;
+
     img {
       width: 100%;
+      max-width: 205px;
     }
   }
 
