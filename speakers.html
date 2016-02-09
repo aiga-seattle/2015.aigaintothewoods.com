@@ -49,23 +49,25 @@ layout: single_column
             <p>Visit their website at <a href="{{ speaker.website }}" target="_blank">{{ speaker.website }}</a>.</p>
           </div>
 
-          <div class="speaker-works-panel">
-            <a class="show-works collapsed" role="button" data-toggle="collapse" href="#collapse{{ speaker.slug | capitalize}}" aria-expanded="false" aria-controls="collapseExample">
-              Show More <span class="caret"></span>
-            </a>
+          {% if speaker.examples and speaker.example_hero %}
+            <div class="speaker-works-panel">
+              <a class="show-works collapsed" role="button" data-toggle="collapse" href="#collapse{{ speaker.slug | capitalize}}" aria-expanded="false" aria-controls="collapseExample">
+                Show More <span class="caret"></span>
+              </a>
 
-            <div class="collapse works-panel" id="collapse{{ speaker.slug | capitalize}}">
-              <div class="works works-rectangle">
-                <img src="{{ speaker.example_hero.url }}" alt="{{ speaker.example_hero.alt }}">
-              </div>
-
-              {% for example in speaker.examples %}
-                <div class="works works-square">
-                  <img src="{{ example.url }}" alt="{{ example.alt }}">
+              <div class="collapse works-panel" id="collapse{{ speaker.slug | capitalize}}">
+                <div class="works works-rectangle">
+                  <img src="{{ speaker.example_hero.url }}" alt="{{ speaker.example_hero.alt }}">
                 </div>
-              {% endfor %}
+
+                {% for example in speaker.examples %}
+                  <div class="works works-square">
+                    <img src="{{ example.url }}" alt="{{ example.alt }}">
+                  </div>
+                {% endfor %}
+              </div>
             </div>
-          </div>
+          {% endif %}
         </div>
       </div>
 
