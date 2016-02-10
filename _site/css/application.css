@@ -6150,8 +6150,9 @@ h3, h4 {
 .page-speakers .speaker-bio, .page-speakers .speaker-title {
   max-width: 560px; }
 .page-speakers .speaker-title {
-  margin-bottom: 30px;
-  font-family: "CenturyGothicStd", Helvetica, Arial, sans-serif; }
+  margin-bottom: 30px; }
+  .page-speakers .speaker-title p {
+    font-family: 'CenturyGothicStd', Helvetica, Arial, sans-serif; }
 .page-speakers h1 {
   font-size: 38px;
   margin-top: 80px;

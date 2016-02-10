@@ -405,7 +405,10 @@ h3, h4 {
 
   .speaker-title {
     margin-bottom: 30px;
-    font-family: 'CenturyGothicStd', Helvetica, Arial, sans-serif
+
+    p {
+      font-family: 'CenturyGothicStd', Helvetica, Arial, sans-serif;
+    }
   }
 
   h1 {
