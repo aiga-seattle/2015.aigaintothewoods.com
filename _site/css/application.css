@@ -6194,10 +6194,9 @@ h3, h4 {
       width: 100%; }
   .page-speakers .works-square:last-child {
     padding-left: 0; } }
-.page-speakers .wrapper-speakers-line-up-intro {
-  padding-top: 40px; }
 .page-speakers .wrapper-speakers-line-up {
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  padding-top: 40px; }
 .page-speakers .wrapper-speakers-line-up-intro,
 .page-speakers .wrapper-speakers-line-up {
   background-color: #63E9B9;
