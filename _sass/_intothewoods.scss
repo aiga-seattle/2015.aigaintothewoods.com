@@ -273,13 +273,31 @@ h3, h4 {
 
     .sponsor {
       color: #fff;
-      width: percentage(1/2);
+      width: percentage(1/5);
       float: left;
 
       img {
         width: 100%;
         max-height: 70px;
         min-width: 100px;
+
+        &.logo-adobe {
+          max-height: 102px;
+          max-width:   74px;
+
+          min-height: 74px;
+          min-width: 54px;
+
+          width: 20%;
+        }
+
+        &.logo-school-of-visual-concepts {
+          max-height: 100px;
+          max-width: 99px;
+          min-height: 68px;
+          min-width: 67px;
+          width: 25%;
+        }
       }
     }
 

@@ -6058,12 +6058,24 @@ h3, h4 {
       margin-bottom: 50px; }
     .sponsors .content .sponsor {
       color: #fff;
-      width: 50%;
+      width: 20%;
       float: left; }
       .sponsors .content .sponsor img {
         width: 100%;
         max-height: 70px;
         min-width: 100px; }
+        .sponsors .content .sponsor img.logo-adobe {
+          max-height: 102px;
+          max-width: 74px;
+          min-height: 74px;
+          min-width: 54px;
+          width: 20%; }
+        .sponsors .content .sponsor img.logo-school-of-visual-concepts {
+          max-height: 100px;
+          max-width: 99px;
+          min-height: 68px;
+          min-width: 67px;
+          width: 25%; }
     @media (max-width: 768px) {
       .sponsors .content h2 {
         font-size: 19px; }
